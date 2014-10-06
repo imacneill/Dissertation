@@ -45,7 +45,7 @@
 
 \begin{document}
 \graphicspath{
-{figs/}
+{Figs/}
 %{intro/figs/}
 %{cms/figs/}
 %{ss/figs/}
@@ -105,19 +105,9 @@
 	\section{Di-boson backgrounds} (WW, WZ, etc)
 	\section{Tri-boson backgrounds} (WWW, WWZ, etc)
 
-\chapter{Samples}
-	\section{collision data sets}
-	\section{mc data sets}
-   
-\chapter{Event Selections}
-	\section{triggers selections}
-	\section{electron selections}
-	\section{muon selections}
-	\section{Z-boson lepton pair selection}
-	\section{3rd lepton selection}
-	\section{jet selection}
-	\section{b-tag selection}
-	\section{optimization}
+\input{Chapters/samples}
+	
+\input{Chapters/event_selections}
 
 \chapter{Background estimation methods}
 	\section{irreducible}
@@ -135,15 +125,10 @@
         		\subsection{sources of uncertainty on method}
         		\subsection{measured b rate}
 
-\chapter{Efficiencies and Uncertainty}
-	\section{lepton: tag \& probe}
-	\section{triggers}         (needed??)
-	\section{b-tagging}
+\input{Chapters/efficiencies_and_uncertainties}
 
-\chapter{Other Uncertainties}
-	\section{generation: pdf, $q^2$, matching, top mass, chosen generator}
-	\section{jet energy scale and resolution}
-	\section{pile up}
+\input{Chapters/other_syst_uncertainties}
+
 
 \chapter{Results}
 	\section{yields, measured signal}
@@ -151,7 +136,7 @@
 	\section{cross section calculation and significance}
    
 
-\input{conclusion/conclusion}
+\input{Conclusion/conclusion}
 
 \bibliographystyle{lucas.bst}
 \bibliography{include/refs}
