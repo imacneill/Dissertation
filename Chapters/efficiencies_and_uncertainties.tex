@@ -1,0 +1,138 @@
+\chapter{Efficiencies and Uncertainty}
+\label{ch:eff_and_unc}
+
+Systematic uncertainties on signal event selections arise from differences between simulated events and the actual performance of  the detector or slight differences in physical processes from simulated processes.
+
+A summary of systematic uncertainties is given in Table~\ref{tab:systSumm}. Full descriptions of each systematic are presented in the following sub-sections.
+
+\begin{table}[h]
+\begin{center}
+\caption{\small\label{tab:systSumm}Summary of systematic uncertainties on the signal selection and
+expectation. 
+Reported values are fractional, relative to the total cross section.}
+\begin{tabular}{lcccc}\hline
+Source 					& Method & Total Systematic 	\\ \hline
+Jet Energy Scale			& Momentum Scale Up/Down                        & 4.8\%	\\
+Jet Energy Resolution	                   	& Momentum Smearing                                         & 0.4\%	\\
+
+b-tag (light flavor)                          & Discriminant Re-weight                              & 1.0\%       	\\
+b-tag (b flavor)		                      & Discriminant Re-weight                              & 2.9\%	\\	
+Q$^2$                                         & Q$^2$ Scale Up/Down                                 & 1.7\% \\
+Matching                                      & Matching Scale Up/Down                              & 1.2\% \\
+Top Mass                                      & Mass Scale Up/Down                                  & 2.5\% \\
+PDF				                              & PDF Re-weight                                       & 1.5\%	\\
+Generator                                     & Compare 2 ttZ Samples                               & 5.0\% \\
+Pile Up                                       &                                                     & 1.0\% \\
+Trigger                                       &                                                     & \lt 1\% \\
+Lepton Identification, Isolation,             & Tag \& Probe                                        & 6.2\% \\
+and Event Composition  & & \\
+\hline
+Total 					                                                                             & & 10.5\% 	\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{Lepton Identification and Isolation MC to Data Scale Factors and Associated Measurement Uncertainties}
+\label{sec:tag_and_probe}
+
+Put table in section with datasets listed used for making the scale factors?
+
+
+Data-Monte Carlo scale factors are derived using the leptonic identification and isolation requirement efficiencies measured with the ``tag and probe" method. The method identifies dilpeton Z events from the full 2012 dataset. One lepton, known as the ``tag," passes the complete set of lepton selections. The other lepton, known as the ``probe," is allowed to pass a relaxed set of requirements. In the case of measuring the efficiency of the isolation requirement, the probe is required to pass the full identification and quality cuts but not the isolation. The efficiency is the ratio of probes passing the isolation requirement to those not passing the requirement. In the case of measuring the efficiency of the identification requirement, the probe is required to pass the full isolation cut but not the identification cuts. \\
+
+For electrons, the tag is required to be matched to the \verb=HLT_Ele27_WP80= trigger, which requires one well-identified electron passing the WP80 electron ID ~\cite{eleICHEP2012twiki} with \pt \gt 27 \GeV. The tag electron must also pass the electron identification requirements and isolation cut in sections ~\ref{sec:eventsel:lepsel} and ~\ref{sec:eleID}. The \pt \ threshold of the tag electron is additionally raised to 32 \GeV \ to avoid trigger turn-on effects. The probe electron has a base requirement of
+\begin{itemize}
+\item \pt \gt 10 \GeV, $|\eta| \lt 2.4$, and excluding electrons with a supercluster between $1.4442 \lt |\eta| \lt 1.566$.
+\end{itemize}
+The identification efficiency is measured with the probe electron additionally passing the isolation requirements described in sections ~\ref{sec:eventsel:lepsel} and ~\ref{sec:eleID} but not the identification requirements. The derived efficiency is directly applicable to the leptons in the full tri-lepton analysis as identification requirements are a property of the lepton alone. The isolation efficiency, however, is dependent on the energy (mainly energy from hadronic activity) in the event. As such, both the electron identification and an additional jet selection is required matching those described in ~\ref{sec:eventsel:jetsel} and ~\ref{sec:appendix:jetsel}. The overall electron efficiency may be measured by relaxing the probe electron to the nominal value. The electron efficiencies are summarized in Table ~\ref{tab:eleffiency}. A simultaneous fit is performed on the di-lepton data in the invariant mass range of $60-120 \ \GeV$ using models from Table ~\ref{tab:tnpmodels} selected for performance on a bin-by-bin basis. This becomes necessary as the kinematics varies with \pt \ and \aeta \ bins and fitting models must be chosen for best results.\\
+
+\begin{table}[h]
+\begin{center}
+\caption{\small\label{tab:tnpmodels} Models used for fitting the signal or the background contribution in the tag and probe method.}
+\begin{tabular}{l|c}\hline
+ Model                                                                               & Usage \\ \hline \hline
+ Breit-Wigner function $\star$ Crystal-Ball function & Signal \\
+ MC-based template function                                       & Signal \\
+ Exponential                                                                    & Background \\
+ Exponential $\star$ Error function                             & Background \\
+ Polynomial                                                                     & Background \\
+ Polynomial $\times$ Exponential function               & Background \\
+ Chebyshev Polynomial                                               & Background \\
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[h]
+\begin{center}
+\caption{\small \label{tab:eleffiency} Measured electron efficiency ratios using the tag and probe method. Errors are statistical only.}
+\begin{tabular}{c|c|c|c|c|c} \hline \hline
+\pt - $|\eta|$   &                 &20 - 30 \GeV & 30 - 40 \GeV & 40 - 50 \GeV & 50 - 200 \GeV \\ \hline
+%                        & MC          &  &  & \\
+%                        & Data       & & & \\
+0.0 - 0.8         & Data/MC & 0.947 +/- 0.003 & 0.963 +/- 0.001 & 0.975 +/- 0.001 & 0.973 +/- 0.001 \\ \hline
+%                        & MC          & & & \\
+%                        & Data       & & & \\
+0.8 - 1.4442   & Data/MC & 0.885 +/- 0.004 & 0.942 +/- 0.001 & 0.960 +/- 0.001 & 0.962 +/- 0.001 \\ \hline
+%                         & MC          & & & \\
+%                         & Data       & & & \\
+1.566 - 2.0      & Data/MC & 0.928 +/- 0.016 & 0.936 +/- 0.002 & 0.959 +/- 0.001 & 0.969 +/- 0.002\\ \hline
+%                         & MC          & & & \\
+%                         & Data       & & & \\
+2.0 - 2.4          & Data/MC & 0.994 +/- 0.006 & 0.980 +/- 0.003 & 0.982 +/- 0.002 & 0.978 +/- 0.004 \\ \hline \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Muon identification and isolation requirement efficiencies are measured using the same methods as with the electrons. Appropriate muon specific identification and isolation requirements as described in ~\ref{sec:eventsel:lepsel} and ~\ref{sec:muID} are used instead of the electron specific ones above.\\
+
+\begin{table}[h]
+\begin{center}
+\caption{\small \label{tab:mueffiency} Measured muon efficiency ratios using the tag and probe method. Errors are statistical only.}
+\begin{tabular}{c|c|c|c|c|c} \hline \hline
+\pt - $|\eta|$ &                 &20 - 30 \GeV & 30 - 40 \GeV & 40 - 50 \GeV & 50 - 200 \GeV \\ \hline
+%                      & MC          &  &  & \\
+%                      & Data       & & & \\
+0.0 - 1.20     & Data/MC & 0.962 +/- 0.001 & 0.972 +/- 0.001 & 0.978 +/- 0.000 & 0.974 +/- 0.001 \\ \hline
+%                      & MC          & & & \\
+%                      & Data       & & & \\
+1.20 - 2.50   & Data/MC & 0.974 +/- 0.002 & 0.978 +/- 0.001 & 0.984 +/- 0.000 & 0.978 +/- 0.001 \\ \hline \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+For both the electrons and muons, the Tag and Probe measurements were repeated in 2 ways. The first measured the scale factor by allowing the probe to fail both ID and ISO requirements. The second allowed the probe to fail ID or ISO requirements separately, and the 2 scale factors were multiplied together. The difference in scale factor between those derived by allowing both ID and ISO to fail together and those derived by combining two measurements that allowed ID and ISO to fail individually is used to assess a systematic uncertainty in this procedure. An average value of deviation across the bins is chosen. In this case, we use 1.5\% on electrons and 0.3\% on muons in addition to the statistical errors quoted in the tables.
+
+Additionally, the  measurements are performed in a pure Drell-Yan sample and may differ slightly for the isolation requirements from those in the analysis selections due to hadronic activity. A study in pure MC was performed to compare the isolation values of electrons or muons generator matched to a status 3 electron or muon. A Drell-Yan sample and a \ttZ \ sample were chosen for this comparison and listed in Appendix ~\ref{sec:mc_details}. The isolation curves are compared for leptons from both samples by looking at the fraction of events passing the isolation cut. This is done by comparing DY sample with no Jet multiplicity requirement to a \ttZ \ sample requiring 4 Jets.  The difference between the fractions  additional systematic is assessed due to the difference in efficiency for the respective analysis isolation cuts between the two samples. Leptons are required to pass the acceptance selections, $\pt > 20 \GeV$, and full identification selections as defined in ~\ref{sec:eventsel} and ~\ref{sec:evtsel_detail}. For muons and electrons the difference is 2\%.
+
+Finally, the scale factors in Tables ~\ref{tab:eleffiency} and ~\ref{tab:mueffiency} are used to reweight MC events based on the identified leptons. To determine the total amount of uncertainty due to the lepton efficiencies, the scale factors are varied up and down by their total errors (stat and systematic). The electron errors and muon errors are assumed to be uncorrellated and thus varied independently between the two. The hadronic activity error is considered correlated for both flavors and varried at the same time for both flavors. The difference between the yields of the up and down variations is used to determine a systematic uncertainty on lepton efficiency, and the 3 variations (e, $\mu$, hadronic) are added in quadrature. This uncertainty is 6.2\% and is summarized in ~\ref{tab:systSumm}.\\\\
+
+
+
+
+
+\section{Systematic Uncertainty Due to Triggers}         (needed??)
+\label{sec:trigger_syst}
+Dilepton triggers are used with a selection that ultimately chooses 3 leptons. This means that the triggers are ultra-efficient as only 2/3 of the leptons need to be identified by the triggers. We assign a 1\% uncertainty to cover the nearly negligible chance of a 3 lepton event failing a dilepton trigger.
+
+\section{b-tagging Efficiency and Associate Measurement Errors}
+\label{sec:btag_syst}
+b-Tagged Jets are chosen based on CSV discriminant thresholds. Differences arise in the shape of the discriminant distributions in Data and MC. In the past event weights were scaled to account for this and match up the number of b-Tags in Data and MC. Another current method involves promoting or demoting b-Tagged jets (e.g. CSVL to None or CSVM to CSVT) using random numbers. This method has the drawback that it becomes fairly complicated to perform when using more than one threshold (e.g. requiring 1 CSVL and 1CSVM b-Tagged jets). A more natural and fitting method reshapes the MC discriminant distribution. This has the advantage of preferentially promoting or demoting b-Jets on the border of a threshold and removing any complexities arising from multiple levels of tightness. The BTV POG recommended methods are summarized for use ~\cite{bTagSF}.\\
+
+The discriminant is reshaped based on Data/MC scale factors measured in ~\cite{BTV11003} by the BTV POG for both light flavor jets mis-tagging and b-Jets tagging. Signal systematics are then determined by reshaping the MC discriminant with the scale factors varied up and down by the error on the scale factor measurement. The MC FlavorAlgo values are used for the jet to quark truth matching. This variation is performed in the \ttZ \ signal sample listed in ~\ref{sec:mc_details}. The percentage difference up and down from the central value is then chosen as the error. This is done separately and independently for both the light flavor scale factors and the b scale factors. The two errors are added in quadrature to get a total (see Table ~\ref{tab:systbTag}).
+
+
+\begin{table}[h]
+\begin{center}
+\caption{\small\label{tab:systbTag} Summary of systematic b-Tag uncertainties split by light flavor and b contributions.}
+\begin{tabular}{lc}\hline
+Source & Total Systematic \\ \hline
+b Quarks & 2.9\% \\
+Light Flavor Quarks & 1.0\% \\ \hline
+Total & 3.1\% \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+

@@ -69,12 +69,7 @@
 	\section{Decays}
     		(focus on boson decays to quarks and leptons to help motivate the signature later)
 
-\chapter{Detector Description}
-	\section{Obligatory mention of LHC and various experiments}
-	\section{Description of CMS detector}        
-		(focus on parts and descriptions that help with e and mu id, isolation measurements, b-tagging, and jet measurements to motivate the reconstruction description of these later on)
-	\section{Luminosity and triggering}        
-		(both will be somewhat short)
+\include{Chapters/detector_description}
 
 \chapter{Particle Reconstruction}
                 (the order may need to be changed around in the subsections)
@@ -86,44 +81,17 @@
 	\section{jets}
 	\section{b-tags}
 
-\chapter{ttZ and Backgrounds}
-	\section{specifics of ttZ production}
-	\section{specifics of ttZ decay}
-	\section{reasons for choosing 3 lepton final state}
-	\section{Backgrounds}
-		\subsection{explain a fake lepton, explain a mistag, explain other sources of b-jets, explain other sources of jets}
-        		\subsection{describe the irreducible backgrounds} 
-			(ttW, ttWW, ttG, etc)
-        		\subsection{describe the backgrounds with fake leptons} 
-			(ttbar, WW, etc)
-        		\subsection{describe the backgrounds with b-tags not from a top decay} 
-			(WZ, ZZ, etc)
 
-(Alternatively, I can group the backgrounds by process instead of by how they become backgrounds)
-	\section{Top backgrounds} (ttbar, ttW, ttG, etc)
-	\section{Mono-boson backgrounds} (W, Z)
-	\section{Di-boson backgrounds} (WW, WZ, etc)
-	\section{Tri-boson backgrounds} (WWW, WWZ, etc)
+\chapter{ttZ and Backgrounds}
+	\input{Chapters/ttz_production_and_signal}
+	\input{Chapters/background_sources}
+
 
 \input{Chapters/samples}
 	
 \input{Chapters/event_selections}
 
-\chapter{Background estimation methods}
-	\section{irreducible}
-        		\subsection{re-describe why they are irreducible}
-        		\subsection{chosen cross sections and errors on cross sections}
-	\section{fake rate}
-        		\subsection{re-describe fakes, discus sources}
-       		\subsection{overview of method}
-        		\subsection{Fake rate data sets and event selection}
-        		\subsection{contamination from electro-weak processes correction}
-        		\subsection{fake rates for electrons and muons}
-	\section{b rate}
-        		\subsection{re-describe source of b-tags not from a top}
-        		\subsection{overview of method}
-        		\subsection{sources of uncertainty on method}
-        		\subsection{measured b rate}
+\input{Chapters/background_estimation}
 
 \input{Chapters/efficiencies_and_uncertainties}
 

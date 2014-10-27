@@ -1,0 +1,235 @@
+\chapter{Event Selections}
+\label{ch::EventSelections}
+Some intro here...
+
+\section{Triggers for Data Acquisition}
+\label{sec:Triggers}
+As the desired final state contains 3 isolated leptons (electrons or muons), a set of triggers without pre-scaling may be used that has 1, 2, or 3 isolated leptons as the trigger requirements. The ideal trigger would have moderate \pt thresholds and would not have restrictions on $\eta$ so that leptons from anywhere in the tracker may be counted. Isolation requirements are allowed provided they are not tighter than the offline requirements of XXXXX (see Section~\ref{}). Further a parallel set of single lepton triggers must exist in order to select data measure the ratio used in the background subtraction method which estimates non-prompt lepton contamination (i.e. Fake Rate) in the signal (see Section~\ref{}). \\
+Thus a variety of triggers were chosen that require 2 or more leptons (double lepton triggers). Triggers that require 1 or more lepton or that require 3 or more leptons were rejected as they would not match the triggers used to estimate the Fake Rate. The double lepton triggers are assumed to be 100\% efficient. The efficiency to trigger on 1 lepton is very high, and thus with 3 leptons, the odds that at least 2 of them will pass is approximately 100\%. A small systematic uncertainty is added to account for any potential inefficiency (see Section~\ref{}).
+	
+\begin{table}[h]
+\begin{center}
+\caption{\small\label{tab:AnalysisTriggers} Triggers used while measuring the yields in data for the main analysis selections. In the trigger name the ``v" at the end of the line stands for a number of versions that changes while data is being collected.}
+\begin{tabular}{l|l} \hline \hline
+Lepton Type & Trigger  \\ \hline
+$\mu\mu$     & \verb=HLT_Mu17_Mu8_v= \\
+$\mu \mu$    &\verb=HLT_Mu17_TkMu8_v= \\
+ee                   & \verb=HLT_Ele17_CaloIdT_CaloIsoVL_TrkIdVL_TrkIsoVL_v= \\
+ee                   & \verb=Ele8_CaloIdT_CaloIsoVL_TrkIdVL_TrkIsoVL_v=\\
+$\mu$e          & \verb=HLT_Mu17_Ele8_CaloIdT_CaloIsoVL_TrkIdVL_TrkIsoVL_v= \\
+$\mu$e          & \verb=HLT_Mu8_Ele17_CaloIdT_CaloIsoVL_TrkIdVL_TrkIsoVL_v= \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Events are required to fire a trigger in Data only. Monte Carlo events are not required to fire a trigger. Monte Carlo triggers are not well enough simulated to accurately predict the behavior of Data triggers. This is not a problem as the Data triggers used are un-prescaled and highly efficient.
+
+
+
+
+\section{General Event Cleanup and Vertex Selection}
+\label{sec::EventCleanup}
+
+Events in data and simulation are required to pass the following:
+
+\begin{itemize}
+\item Scraping cut: if there are $\geq$ 10 tracks, require at least 25\% of them to be high purity. 
+\item Require at least one good primary vertex (PV), and use the first such vertex found as a reference point for further selections.  A good vertex is selected by requiring:
+	\begin{itemize}
+	\item not fake, ?????????
+	\item ndof $>$ 4,
+	\item $|\rho| < 2$ cm,
+	\item $|z| < 24$ cm.  
+	\end{itemize}
+\end{itemize}
+	 
+	 
+\section{High Level Event Identification}	 
+\label{sec:EventSelections}
+Good, isolated electrons are selected following the ``medium" identification requirements recommended by the Egamma POG~\cite{eleICHEP2012twiki}.
+Electrons are required to have no missing expected inner hits~\cite{conv} and to not be reconstructed as part of a good conversion vertex~\cite{hwwsmurf} so as to suppress background from converted photons.
+Additionally, electrons are required to have $\Delta R >0.1$ with respect to any muon passing the selections above.
+We reject electrons found in the transition region.
+The isolation follows the POG recommendation~\cite{egammapfisotwiki}, using particle-flow based isolation with a cone size of \DR\  $=$ 0.3.  
+Subtraction for PU is performed by removing a term defined by the product of the average event energy density and the effective area of the isolation cone from the neutral isolation sum~\cite{egammaisorhoaeff}.
+The isolation relative to the electron \pt\ is required to be less than 0.09.\\
+
+Event selections were designed to be middle ground - a compromise between strong background rejection and inclusiveness. It is done in 5 main steps:
+\begin{enumerate}
+\item Identify a Z candidate consisting of two isolated high \pt \ leptons (20 \GeV ) with opposite electric charge and of the same flavor that are within a $\pm 10$ \GeV window of the Z invariant mass (\zmass);
+\item Identify a third lepton which could be the result of a W decay passing the same identification and isolation requirements as the Z leptons;
+\item Reject events with a 4th lepton passing a looser set of selections (identification loosened to the standard EGamma medium working point and Muon tight working point and $\pt > 10 \ \GeV$) to be exclusive with the 4 Lepton channel;
+\item Identify at least 4 Jets to be consistent with the number from a semi-leptonic $t\bar{t}$ decay;
+\item Identify from the Jets at least 2 that pass the CSV b-Tagging algorithm;
+\end{enumerate}	 
+	 
+\section{electron selections}
+\label{sec:ElectronSelections}
+
+Electron candidates are RECO GSF electrons with \pt\ \gt\ 20 \GeV\ and \absetaele\ passing the following requirements recommended by the Egamma POG~\cite{eleICHEP2012twiki}:
+\begin{itemize}
+\item reject electrons in the transition region $1.4442 < \aeta < 1.556$, where $\eta$ is taken from the super-cluster (SC);
+\item electrons have to have $\DR >0.1$ with respect to any muon passing the selections in Appendix~\ref{sec:muID};
+\item cut-based medium WP as defined by~\cite{eleICHEP2012twiki};
+\item transverse impact parameter of the GSF track with respect to the selected PV to be $<200~\micron$;
+\item the $z$ coordinate of the GSF track should be within 2~mm with respect to that of the selected PV;
+\item Conversion removal by veto of a good reconstructed conversion vertex.  A conversion vertex is considered good if it has no tracker hits towards the beam, has a fit probability above $10^{-6}$, has a displacement of more than 2~cm, and the  CTF track matching to the electron should be a part of the conversion vertex. No requirement is made on the vertex quality flag corresponding to merging and arbitration~\cite{hwwsmurf}.
+\end{itemize}
+
+Additionally, the identification contains the following modifications/additions with respect to the above recommendation:
+
+\begin{itemize}
+\item the number of missing expected inner hits must be zero~\cite{conv};
+
+\item the $H/E$ is required to be \lt 0.1 (0.075) in the barrel (endcap) to match the requirements in the trigger.
+\end{itemize}
+
+The isolation follows the POG recommendation, using particle-flow based isolation with a cone size of \DR  $=$ 0.3~\cite{egammapfisotwiki}.  
+In the endcap, an inner veto of \DR $=$ 0.015 (0.08) is imposed for charged hadrons (photons). 
+The isolation is corrected for PU by subtracting from the neutral isolation components a term defined by the product of the average event energy density and the effective area of the isolation cone~\cite{egammaisorhoaeff}.  The neutral component after correction is required to be non-negative.  
+The isolation relative to the electron \pt\ is required to be less than 0.09.
+
+
+
+\section{muon selections}
+\label{sec:MuonSelections}
+Muons are required to be well identified and isolated, passing the ``tight" identification requirements recommended by the muon POG~\cite{muICHEP2012twiki}. Additionally veto deposits are required to be consistent with a minimum ionizing particle and the d0 requirement is tightened to reduce non-promt lepton contamination.  
+Isolation follows the POG recommendation, using  particle-flow based isolation with a $\Delta\beta$ correction for PU and a threshold of 0.1.
+A smaller cone size of \DR\ $=$ 0.3 is adopted due to the high hadronic activity expected in signal-like events.\\
+
+Muon candidates are RECO muon objects with \pt\ \gt\ 20 \GeV\ and \absetamu\ and passing the ``tight" identification requirements recommended by the muon POG~\cite{muICHEP2012twiki}:
+\begin{itemize}
+\item is a global muon;
+\item is a particle flow muon;
+\item $\chi^2$/ndof of global fit $<$ 10;
+\item at least 6 layers with hits in the tracker;
+\item the global fit has to include at least one valid hit in the muon subdetectors;
+\item there are muon segments in at least two muon stations. Note, this implies that the muon is also an arbitrated tracker muon~\cite{swguidetrackermuonstwiki};
+\item at least one pixel hit.
+\end{itemize}
+
+Additionally, the identification contains the following modifications/additions with respect to the above recommendation:
+
+\begin{itemize}
+\item transverse impact parameter of the silicon (inner) track with respect to the selected PV to be $<200~\micron$;
+\item the inner track $z$ should be within 1~mm from the selected PV;
+\item ECAL veto deposit \lt\ 4~\GeV\ (veto deposit corresponds to the sum of $E_T$ in the region of the calorimeter
+associated with the muon impact);
+\item HCAL veto deposit \lt\ 6~\GeV.
+\end{itemize}
+
+The isolation follows the POG recommendation, using particle-flow based isolation with a $\Delta\beta$ correction for PU.  
+However, a smaller cone size of \DR\ $=$ 0.3 is adopted due to the high hadronic activity expected in signal-like events.  
+The isolation calculated using 
+$$
+\relIso = [ \Sigma_{\rm ch} + {\rm max}(0, \Sigma_{\rm nh} + \Sigma_{\rm ph} - 0.5 \Delta\beta) ]/\pt,
+$$
+where $\Sigma_{\rm ch, nh, ph}$ are the sums of \pt\ of the charged hadron, neutral hadron, and photon particle flow candidates, respectively.
+Here the charged hadrons are matched to the PV and a 0.5~\GeV\ threshold is applied on neutral hadrons and photons.  
+The $\Delta\beta$ correction is det	``ermined from the sum \pt\ of charged hadrons not matched to the PV with a threshold of 0.5~\GeV\ in a cone of the same size as the isolation.  
+ 
+The \relIso\ is required to be less than 0.1.
+
+
+\section{Z-boson lepton pair and 3rd lepton selection}
+\label{sec:3LepSelection}
+All 3 selected leptons must pass the Identification and Isolation requirements as well as \pt and $\eta$ requirements listed in Sections \ref{} and \ref{}. Furthermore, 2 of the leptons are required to be consistent with a reconstructed Z boson. This includes:
+\begin{itemize}
+\item opposite charge
+\item same flavor
+\item invariant mass between 81 and 101 GeV
+\item both leptons matched to the same vertex
+\end{itemize}
+In the case of events where all three leptons are the same flavor and two combinations exist which fit in the invariant mass window, the one which is closest to the measured Z mass of \zmass \ ~\cite{pdg} is chosen.\\
+
+\section{4th lepton veto}
+\label{sec:4thLeptonVeto}
+To be accepted as an event, three tight leptons as described in Appendix ~\ref{sec:muID} and ~\ref{sec:eleID} must be found. A veto on a fourth lepton passing the unmodified POG recommendations used as the base cuts above is applied. In addition, the 4th lepton has a relaxed \pt \ requirement of 10 \GeV. Finally, the same isolation requirements as above are used.
+
+\section{jet selection}
+\label{sec:JetSelection}
+There must be at least 3 particle-flow jets with $\pt > 30$ GeV and $|\eta| < 2.5$ and at least a fourth particle-flow jet with $\pt > 15$ GeV and $|\eta| < 2.5$. The threshold on the fourth jet is lowered as this one tends to be produced softer than the other jets.
+Jets are reconstructed with the anti-$k_{T}$ algorithm with parameter R = 0.5.  
+Jets in simulation have L1FastJetL2L3 (FastJet-based offset correction followed by L2 and L3 corrections) corrections applied.  
+Jets in data additionally have L2L3 residual corrections applied~\cite{jetcorrectionstwiki}. 
+Selected jets must pass loose {\tt pfJetId} and be separated by $\Delta R >$ 0.5 from any lepton passing the selections above. Finally, an extra pile up rejection is applied where at least 10\% \ of the energy in the jet must be from within a $dZ < 0.05 cm$ of the primary vertex.
+
+\section{b-tag selection}
+\label{sec:bTagSelection}
+
+Include details about tagger efficiency and purity as well as some basic info about how it works???????????\\
+
+At least two jets passing the above jet selections in \ref{} and $\pt > 30$ are required to be tagged using the CSV algorithm. Both must be at least passing the loose threshold, and one must be at least passing the medium threshold.
+This tagger identifies jets with discriminant larger than  0.244 as Loose b-tagged and 0.679 as Medium b-tagged~\cite{btagICHEP2012twiki}.
+
+
+
+
+\section{optimization}
+\label{sec:Optimization}
+
+While defining the event selections, a number of options were considered. All of the selections were chosen to simultaneously reduce the  background compared to signal and the projected error on the cross section using the \ttZ \ signal Monte Carlo and full analysis background estimates. This includes \Ht \ cuts, \met \ cuts, alternative thresholds and multiplicities for b-tagging, alternative  \pt cuts and multiplicities for jets, and varying sized Z mass windows. In the end, too many backgrounds have real \met \ from a $W \rightarrow \ell \nu$ decay for this to be a distinguishing variable. Although \Ht \ can be used to reduce many of the backgrounds, it ended up performing not quite as well as and being redundant with the (related) pure jet cuts used in this note. Additionally, a single tight or medium  b-tag was found to let in too much background, while using 2 mediums or a medium and a tight killed too much signal.  
+
+Optimizing the Z mass window ends up being less straightforward than the other relevant selections. The Z mass window makes little difference in the error on the cross section and was thus chosen by its expected signficance (Table ~\ref{tab:zmass_errorsig}). In Table~\ref{tab:zmass_errorsig}, the significance continues to increase with an even narrower Z mass window than the chosen $\pm 10$ \GeV \ window, but there is a strong reason to stop at $\pm 10$ \GeV.\\
+
+These predictions are made with the assumption that no new systematic uncertanties are introduced. This assumption does not hold up for a narrow enough Z mass window. By comparing the yields of the \ttZ \ signal MC to a 2 lepton Z selection in data, the yields do not scale the same. The 2 lepton Z selection is the same as used to calculate the rate of b-tagged jets in the background estimate of non-top process. Table ~\ref{tab:zmass_massscaling} shows the \ttZ scaling and the 2 lepton data scaling both with a b-veto applied as well as a 2 b-tag selection applied. The reference yields are from the $\pm 15$ \GeV \ Z mass window. The 2 lepton Z data selection is chosen because it is high in statistics and not part of our signal region (yet contains a reconstructed Z boson).
+
+As the window gets narrower beyond $\pm 10$ \GeV, the difference in scaling of the yields in Table ~\ref{tab:zmass_massscaling} becomes significant at approximately a difference of 4-5\%. These narrower mass windows would lead to challenges in estimating the systematic uncertainty introduced by the mass window as well as reduce the significance of that mass window. To avoid this extra difficulty, the $\pm 10$ \GeV \ window is chosen.
+
+\begin{table}[ht!]
+\caption{\small \label{tab:zmass_errorsig} Expected signficance and estimated \% error on the cross section by varying the Z mass window. Significance and error estimates are determined with full analysis selections and background estimates in conjunction with the \ttZ \ signal Monte Carlo.}
+\begin{center}
+\begin{tabular}{c|ccc}\hline
+Mass Window (\GeV)   &  Expected Significance  & \multicolumn{2}{c}{Estimated Error on Cross Section}    \\
+                     &                         & +         & -                                           \\
+\hline \hline
+$\pm 15$             &  2.27                   &  +51\%    &  -45\%                                      \\
+$\pm 12.5$           &  2.42                   &  +50\%    &  -43\%                                      \\
+$\pm 10$             &  2.44                   &  +50\%    &  -43\%                                      \\
+$\pm 7.5$            &  2.57                   &  +49\%    &  -42\%                                      \\
+$\pm 5$              &  2.51                   &  +51\%    &  -43\%                                      \\
+$\pm 2.5$            &  2.21                   &  +60\%    &  -49\%                                      \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+%% \begin{table}[ht!]
+%% \caption{\small \label{tab:zmass_expsig} Expected significance by varying the Z mass window. Expected significance is determined with full analysis selections and background estimates in conjunction with the \ttZ \ signal Monte Carlo.}
+%% \begin{center}
+%% \begin{tabular}{c|c}\hline
+%% Mass Window (\GeV)  & Expected Significance            \\
+%% \hline \hline
+%% $\pm 15$            &  2.27 \\
+%% $\pm 12.5$          &  2.42 \\
+%% $\pm 10$            &  2.44 \\
+%% $\pm 7.5$           &  2.57 \\
+%% $\pm 5$             &  2.51 \\
+%% $\pm 2.5$           &  2.21 \\
+
+%% \hline
+%% \end{tabular}
+%% \end{center}
+%% \end{table}
+
+
+\begin{sidewaystable}[ht!]
+\caption{\small \label{tab:zmass_massscaling} Scaling of yields in high statistics Z selection with Z mass window. The ``2 Lepton Data'' columns are important numbers in the calculation of the rate of b-tags and are used here because they are a high statistics selection of a Z boson. Statistical errors on the absolute yields in the \ttZ MC \ are between 5 and 6\%. Statistical errors on the DY MC are negligable while statistical errors on the 2 Lepton Data selection are between 0.5\% and 2\% where the DY MC with b-veto is clustered at the low end.}
+\begin{center}
+\begin{tabular}{c|ccccc}\hline
+Mass Window (\GeV)  & \ttZ \ MC   & 2 Lepton DY MC  & 2 Lepton Data  & 2 Lepton DY MC  & 2 Lepton Data  \\
+                    &             & with b-Veto     & with b-Veto    & with 2 b-tags   & with 2 b-tags \\
+\hline \hline
+$\pm 15$            &  100\%      &  100\%          & 100\%          & 100\%           & 100\%  \\
+$\pm 12.5$          &  99.5\%     &  98.6\%         & 98.1\%         & 99.0\%          & 98.1\% \\
+$\pm 10$            &  97.8\%     &  96.0\%         & 95.6\%         & 97.1\%          & 95.4\% \\
+$\pm 7.5$           &  95.2\%     &  91.9\%         & 90.8\%         & 91.9\%          & 91.4\% \\
+$\pm 5$             &  87.9\%     &  83.6\%         & 81.4\%         & 85.5\%          & 82.0\% \\
+$\pm 2.5$           &  65.3\%     &  61.5\%         & 56.8\%         & 60.9\%          & 57.5\% \\
+
+\hline
+\end{tabular}
+\end{center}
+\end{sidewaystable}
