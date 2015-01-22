@@ -1,8 +1,102 @@
 	\section{Backgrounds}
 		\subsection{explain a fake lepton, explain a mistag, explain other sources of b-jets, explain other sources of jets}
+		Fake Leptons\\
+		The \ttZ signature being examined measured requires 3 leptons to be reconstructed and identified. Specifically the leptons should arise be produced from near nominal mass W or Z boson decays. Further these bosons should have been produced either from a top decay or as part of the underlying collision. The source of the leptons cannot be directly measured but can be inferred from various properties with varying levels of false positives and negatives. A lepton produced from a W or Z boson decay is known as a ``real'' lepton. It is characterized primarily by moderate \pt that on average is around half the mass of the parent boson. It also is detected alone with very small amounts of energy around it in the detector and originates from very near the primary vertex. Ones produced by other means are known as ``fake'' leptons. Fake leptons primarily are characterized by extra energy surrounding the lepton (indicative of being from a hadronic source like a b-quark) and often do not originate from near the primary vertex. A fake lepton may actually be an object that looks like a lepton in the detector (such as a pion that does not leave its energy as expected in the hadronic calorimeter). More confusingly, it may also be a true lepton that arises from a source that is not an interesting underly event (such as a b-quark which decays to a far off mass W which then decays to a lepton and neutrino).\\
+		
+		The ``fake'' leptons come from sources that are not well modeled in Monte Carlo, and must be estimated by a method using data control regions. A description of the estimation method is described in Seciont ~\ref{}. The primary source of fake leptons is semi-leptonic b decays. Thus events with top quarts are heavy sources of fake leptons. See Figure~\ref{fig:tt_w_fake} for an example of \ttbar contributing to the 3 lepton measurement. The chance of an event having 2 fake leptons is exponentially down from a single fake lepton due to the probability of 2 single b-quarks decaying semi-leptonicaly and further reduced by the probability of an event containing enough b-quarks (or light flavor quarks mis-tagged as b-jets) to both produce the fake leptons and have b-tagged jets passing the selections. Thus,  events with double fakes are considered negligible. The following sections will summarize which background processes may pass selections due to a fake lepton being present.\\
+		
+			\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.48\linewidth]{Figs/placeholder.pdf}
+\caption{\label{fig:tt_w_fake}
+Example of a \ttbar event with a fake lepton to pass the 3 lepton requirements.
+}
+\end{center}
+\end{figure} 
+
+b tags \\
+Other events with the requisite number of leptons provide a false positive because of b-quarks that do not arise from top decays. There are 3 main sources that will provide these non-top b-quarks.
+\begin{itemize}
+\item Z decay to \bbbar (~15\% decay rate ~\cite{pdg})
+\item Light flavor (usually c-quarks) mis-tagged as b-jets
+\item Gluon splitting to \bbbar
+\end{itemize}
+
+Items 1 is well modeled in Monte Carlo, but item 2 and 3 are not. Events that have b-quarks from a Z decay, tend to fail other selections or have very small cross sections and are a relatively small backgrounds. The primary source of extra b-jets is gluon splitting to \bbbar pairs (see Figure~\ref{fig:gluon_splitting}). The gluons are provided by initial state radiation as a any of the quarks present in the reaction can kick radiate a gluon or fuse into a gluon in higher order diagrams. These b-quarks tend to be heavily collimated, but some times have enough angular separation to be reconstructed as 2 distinct b-jets. These events are not well simulated in Monte Carlo and should be measured in a data control region. Additionally, as the \ttZ events exist in a jet rich environment, light flavor mistags will definitely contribute to false positives. Some attempt is made to correct for them in Monte Carlo simulation by using Data to MC scale factors that have been measured by the b-tag working group ~\cite{}. However, measuring the rate at which events pass the selection in a data control region is still the best way to estimate these backgrounds. Estimation of this type of background will be described in Section ~\ref{}. Production compositions that contribute to backgrounds with non-top b-quarks are described in Section~\ref{}.\\
+
+			\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.48\linewidth]{Figs/placeholder.pdf}
+\caption{\label{fig:gluon_splitting}
+Example of a gluon splitting event where the b-quarks are from not top events.
+}
+\end{center}
+\end{figure} 
+
+		
         		\subsection{describe the irreducible backgrounds} 
-			(ttW, ttWW, ttG, etc)
+	Despite all attempts to reduce the backgrounds by requiring stringent cuts on leptons, mass windows, jets, and so on, there are some processes that will just pass all of the cuts. These are known as irreducible backgrounds. For \ttZ, these backgrounds primarilly have \ttbar pairs produced in association with something else (like a boson). Table ~\ref{tab:irreducible_bkg} contains a list of irreducible backgrounds.
+	\begin{table}[hbt]
+	\begin{center}
+	\begin{tabular}{l|ll|c}\hline\hline % L | LL | L dividers and justification
+	Process & Decay Products & Other Special Features & Exp. Size of Contribution\\
+	\hline
+	\ttW & 3L + 2b& 2 ISR/FSR Jets& Large\\
+	\tbZ & 3L + 2b& 2 ISR/FSR jets & Large\\
+	\ttH & 3L + 2b + 2j & & Large \\
+	\ttG & 3L + 2b + 2j & & Small \\
+	\ttWW & 3L + 2b +2j& & Small\\
+	\WZZ & 3L + 2b & 2 ISR/FSR Jets & Small\\
+	\ZZZ & 3L + 2b & One lepton not identified + 2 ISR/FSR Jets & Small\\
+	
+	\hline \hline
+	\end{tabular}
+	\caption{\label{tab:irreducible_bkg} Irreducible backgrounds.}
+	\end{center}
+	\end{table}
+			  
+			
         		\subsection{describe the backgrounds with fake leptons} 
-			(ttbar, WW, etc)
+	Table ~\ref{tab:fake_bkg} lists the processes that contribute to the background events due to the inclusion of a ``fake'' lepton which does not come from a W or Z decay. These backgrounds are primarily comprised of events with \ttbar or multi-bosons in them that also have the potential to produce several jets. However, some productions with very large cross sections also contribute like the Z or W production. These events make up for the very low probability of extra jets and fake leptons through sheer commonness.
+			
+	\begin{table}[hbt]
+	\begin{center}
+	\begin{tabular}{l|ll|c}\hline\hline % L | LL | L dividers and justification
+	Process & Decay Products & Other Special Features & Exp. Size of Contribution\\
+	\hline
+	\ttbar & 2L + 2b & 2 ISR/FSR Jets + 1 Fake & Large\\
+	ZZ & 2L + 2b & 2 ISR/FSR Jets + Fake & Small\\
+	WZ & 2L + 2j & 2b + Fake & Small\\
+	Z & 2L & 2 ISR/FSR Jets + 2b + Fake & Very Small\\
+	WW & 2L & 2 ISR/FSR Jets + 2b + 1 Fake & Very Small\\
+	W & 1L & 2 ISR/FSR Jets + 2 b + 2 Fakes & Very Small\\
+	\hline \hline
+	\end{tabular}
+	\caption{\label{tab:fake_bkg} Fake backgrounds.}
+	\end{center}
+	\end{table}
+			
         		\subsection{describe the backgrounds with b-tags not from a top decay} 
-			(WZ, ZZ, etc)
+
+	\begin{table}[hbt]
+	\begin{center}
+	\begin{tabular}{l|ll|c}\hline\hline % L | LL | L dividers and justification
+	Process & Decay Products & Other Special Features & Exp. Size of Contribution\\
+	\hline
+	\ttbar & 2L + 2b & 2 ISR/FSR Jets + 1 Fake & Large\\
+	ZZ & 2L + 2b & 2 ISR/FSR Jets + Fake & Small\\
+	WZ & 2L + 2j & 2b + Fake & Small\\
+	Z & 2L & 2 ISR/FSR Jets + 2b + Fake & Very Small\\
+	WW & 2L & 2 ISR/FSR Jets + 2b + 1 Fake & Very Small\\
+	W & 1L & 2 ISR/FSR Jets + 2 b + 2 Fakes & Very Small\\
+	\hline \hline
+	\end{tabular}
+	\caption{\label{tab:fake_bkg} Fake backgrounds.}
+	\end{center}
+	\end{table}
+
+			
+			
+			
+			
+			
