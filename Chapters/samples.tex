@@ -1,6 +1,20 @@
-\chapter{Samples}
+\chapter{Sources of Real and Simulated Collsions}
 \label{ch:samples}
 \section{Collision Data Samples}
+	
+	This document presents results obtained from data of proton-proton collisions at 8 TeV center of mass energy. A total luminosity of \intLumi \ is used, which corresponds to the totality of data to be measured at this center of mass energy at the LHC. The data was collected by the CMS detector up through the end of 2012. This analysis relies on a mixture of data driven methods and MC simulation to estimate backgrounds. Additionally, signal events are generated for use in this analysis. 
+	
+	
+	Data used is a combination of prompt (Run2012C v2 and D) and re-reco (Run2012A, B, part of C, and part of D) data.  
+Run2012A comes from both the 13July re-reco and 06August recovery campaigns while Run2012B is only from the former.  
+Data from Run2012C v1, corresponding to ~0.5 \fbinv, comes from the 24Aug re-reco while v2 is from prompt. Rounding out Run2012C is an addition Dec11 Ecal Recovery rereco for 0.133 \fbinv. Additionally, data for Run2012D comes from prompt.
+    
+Only events from certified data-taking periods are used.  
+The selection of good run and luminosity sections comes from a combination of prompt and re-reco certification.  
+The certified dataset considered in this document covers runs up to 208686 inclusive and corresponds to \intLumi \ and an associated error of 2.6\%~\cite{lumi12up}. 
+
+
+	
 	
 	
 Signal events are selected from the datasets and run ranges listed in Table~\ref{tab:DilDsets}.  The fake rate measurement is performed using those listed in Table~\ref{tab:FRDsets}.  Runs found in the Run2012A 06Aug2012 recover are excluded from the Run2012A 13Jul2012 re-reco dataset. 
@@ -48,7 +62,7 @@ Name		& Run Range & Luminosity ($fb^{-1}$) \\ \hline
 
  \hline\hline
 \end{tabular}
-\caption{\label{tab:DilDsets}Datasets used to select signal events.}
+\caption{\label{tab:DilDsets}Datasets and run ranges used in combination which contain signal events.}
 \end{center}
 \end{table}
 
@@ -80,7 +94,7 @@ Name		& Run Range \\ \hline
 \verb=/SingleMu/Run2012D-PromptReco-v1/AOD=                                  &  203768 - 208913   \\
  \hline\hline
 \end{tabular}
-\caption{\label{tab:FRDsets}Datasets used to measure the lepton fake rates.}
+\caption{\label{tab:FRDsets}Datasets and run ranges used in combination to measure the lepton fake rates.}
 \end{center}
 \end{table}
 
@@ -98,6 +112,12 @@ Only certified data from the datasets and run ranges listed in Appendix~\ref{sec
 \section{Monte Carlo Simulation Samples}
 \label{sec:MCSamples}
 
+All MC is produced by the Madgraph5~\cite{Alwall:2011uj} event generator, and interfaced with Pythia6~\cite{pythia6} for hadronization and showering. Finally a Geant4~\cite{geant4applications}~\cite{geant4toolkit} based model of the CMS detector is used to simulate particle interactions with the detector. The MC events and data are processed using the same reconstruction algorithms. Simulated events are scaled to the measured luminosity using highest order cross sections available at the time.
+
+Monte Carlo samples are used for the prediction of rare SM tri-lepton yields as well as for studies of the background estimation methods.  
+Background samples were produced with full simulation and reconstructed with a 53x CMSSW release as part of the Summer12\_DR53X campaign.
+The $t\bar{t}Z$ signal sample has the same origin.    
+All cross sections used in normalization are Next to Leading Order (NLO) when available.
 
 Table~\ref{tab:IrreducibleMCSamples} contains a list of Monte Carlo samples contributing to the SM background from rare processes that is taken from simulation.  The cross section and equivalent luminosity of each sample is also provided. \ttZ \ is included in this table as it is used in the spillage subtraction in the fake rate.
 
@@ -185,7 +205,7 @@ All datasets are in the AODSIM data tier.}
 
 
 
-Table ~\ref{tab:bEstimatedMCSamples} contains a list of Monte Carlo samples that are used for reference for the theoretical contributions of the processes estimated from the method that predicts he contribution of events that have b-tags from radiation.
+Table ~\ref{tab:bEstimatedMCSamples} contains a list of Monte Carlo samples that are used for reference only to help gain insight into  the estimates from the method that predicts the contribution of events that have b-tags from radiation.
 \begin{sidewaystable}[H]
 \begin{center}
 \begin{tabular}{lcc}
