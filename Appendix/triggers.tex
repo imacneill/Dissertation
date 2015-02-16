@@ -1,0 +1,163 @@
+\chapter{Tables of Triggers}
+\label{triggers}
+
+
+
+\section{Triggers}
+\label{sec:data_details:trig}
+For data in the full analysis selection, all unprescaled Mono-, Di-, and Tri-Lepton triggers are used to be fully efficient.\\
+\begin{table}[h]
+\begin{center}
+\caption{\small\label{tab:App:AnalysisTriggers} Triggers used whiie measuring the yields in data for the main analysis selections.}
+\begin{tabular}{l|l} \hline \hline
+Lepton Type & Trigger  \\ \hline
+$\mu$ & \verb=HLT_IsoMu24_eta2p1_v= \\
+$\mu$ & \verb=HLT_IsoMu24_v= \\
+e & \verb=HLT_Ele17_CaloIdT_CaloIsoVL_TrkIdVL_TrkIsoVL_v= \\
+$\mu\mu$  & \verb=HLT_Mu17_Mu8_v= \\
+$\mu \mu$ &\verb=HLT_Mu17_TkMu8_v= \\
+ee & \verb=HLT_Ele17_CaloIdT_CaloIsoVL_TrkIdVL_TrkIsoVL_= \\
+      & \verb=  Ele8_CaloIdT_CaloIsoVL_TrkIdVL_TrkIsoVL_v=\\
+$\mu$e & \verb=HLT_Mu17_Ele8_CaloIdT_CaloIsoVL_TrkIdVL_TrkIsoVL_v= \\
+$\mu$e& \verb=HLT_Mu8_Ele17_CaloIdT_CaloIsoVL_TrkIdVL_TrkIsoVL_v= \\
+$\mu \mu \mu$ & \verb=HLT_DoubleMu5_IsoMu5_v= \\
+$\mu \mu \mu$ & \verb=HLT_TripleMu5_v= \\
+eee & \verb=HLT_DoubleEle10_CaloIdL_TrkIdVL_Ele10_CaloIdT_TrkIdVL_v= \\
+eee & \verb=HLT_Ele15_Ele8_Ele5_CaloIdL_TrkIdVL_v= \\
+$\mu \mu$e & \verb=HLT_DoubleMu5_Ele8_CaloIdT_TrkIdVL_v= \\
+$\mu \mu$e & \verb=HLT_DoubleMu8_Ele8_CaloIdT_TrkIdVL_v= \\
+$\mu$ee & \verb=HLT_Mu8_DoubleEle8_CaloIdT_TrkIdVL_v= \\
+$\mu$ee &\verb=HLT_Mu8_Ele8_CaloIdT_TrkIdVL_Ele8_CaloIdL_TrkIdVL_v= \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+For the Fake Rate measurement, the following triggers summarized in Tables ~\ref{tab:ElFRTriggers} and ~\ref{tab:MuFRTriggers} are used.\\
+\begin{table}[h]
+\begin{center}
+\caption{\small \label{tab:ElFRTriggers} Triggers used while measuring the electron Fake Rate}
+\begin{tabular}{l} \hline \hline
+        Triggers       \\ \hline
+\verb=HLT_Ele8_CaloIdT_TrkIdVL_v=\\
+\verb=HLT_Ele8_CaloIdT_TrkIdVL_Jet30_v= \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+  
+
+
+
+
+\begin{table}[h]
+\begin{center}
+\caption{\small \label{tab:MuFRTriggers} Triggers used while measuring the muon Fake Rate}
+\begin{tabular}{l} \hline \hline
+        Triggers       \\ \hline
+\verb=HLT_Mu8_v=   \\
+\verb=HLT_Mu17_v=   \\  
+\verb=HLT_Mu24_v=  \\
+\verb=HLT_Mu24_eta2p1_v= \\
+\verb=HLT_Mu30_v=      \\
+\verb=HLT_Mu30_eta2p1_v= \\ 
+ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+
+
+
+\section{Datasets}
+\label{sec:data_details:datasets}
+
+Signal events are selected from the datasets and run ranges listed in Table~\ref{tab:DilDsets_run}.  The fake rate measurement is performed using those listed in Table~\ref{tab:FRDsets}.  Runs found in the Run2012A 06Aug2012 recover are excluded from the Run2012A 13Jul2012 re-reco dataset. 
+
+\begin{table}[hbt]
+\begin{center}
+\begin{tabular}{lc}\hline\hline
+Name		& Run Range  \\ \hline
+\verb=/DoubleMu/Run2012A-recover-06Aug2012-v1/AOD=                 & 190782 - 190949 \\ 
+\verb=/DoubleMu/Run2012A-13Jul2012-v1/AOD=                                  &  190456 - 193621                     \\ 
+\verb=/DoubleMu/Run2012B-13Jul2012-v4/AOD=                                  &  193834 - 196531                     \\ 
+\verb=/DoubleMu/Run2012C-24Aug2012-v1/AOD=                                &  197770 - 198913  \\  
+\verb=/DoubleMu/Run2012C-PromptReco-v2/AOD=                               &  198934 - 203755                     \\ 
+\verb=/SingleMu/Run2012C-EcalRecover_11Dec2012-v1/AOD=          & 201 191 - 201191 \\
+\verb=/DoubleMu/Run2012D-PromptReco-v1/AOD=                               &  203768 - 208913   \\
+%\verb=/DoubleMu/Run2012D-16Jan2013-v1/AOD=                                 &  207883 - 208307  \\
+
+\verb=/DoubleElectron/Run2012A-recover-06Aug2012-v1/AOD=         &    190782 - 190949                   \\ 
+\verb=/DoubleElectron/Run2012A-13Jul2012-v1/AOD=                         & 190456 - 193621                       \\ 
+\verb=/DoubleElectron/Run2012B-13Jul2012-v1/AOD=                         &  193834 - 196531  \\ 
+\verb=/DoubleElectron/Run2012C-24Aug2012-v1/AOD=                       &  197770 - 198913                    \\ 
+\verb=/DoubleElectron/Run2012C-PromptReco-v2/AOD=                     &   198934 - 203755                  \\ 
+\verb=/SingleMu/Run2012C-EcalRecover_11Dec2012-v1/AOD=          & 201 191 - 201191 \\
+\verb=/DoubleElectron/Run2012D-PromptReco-v1/AOD=                      &  203768 - 208913   \\
+%\verb=/DoubleElectron/Run2012D-16Jan2013-v2/AOD=                        &   207883 - 208307 \\
+
+\verb=/MuEG/Run2012A-recover-06Aug2012-v1/AOD=                          &      190782 - 190949                 \\ 
+\verb=/MuEG/Run2012A-13Jul2012-v1/AOD=                                          &  190456 -193621                     \\ 
+\verb=/MuEG/Run2012B-13Jul2012-v1/AOD=                                         &  193834 -196531       \\ 
+\verb=/MuEG/Run2012C-24Aug2012-v1/AOD=                                      &   197770 - 198913                 \\ 
+\verb=/MuEG/Run2012C-PromptReco-v2/AOD=                                     &   198934 - 203755                    \\ 
+\verb=/SingleMu/Run2012C-EcalRecover_11Dec2012-v1/AOD=          & 201 191 - 201191 \\
+\verb=/MuEG/Run2012D-PromptReco-v1/AOD=                                     &  203768 - 208913   \\
+%\verb=/MuEG/Run2012D-16Jan2013-v2/AOD=                                       &  203768 - 208307 \\
+
+\verb=/SingleMu/Run2012A-recover-06Aug2012-v1/AOD=                    &   190782 - 190949          1          \\ 
+\verb=/SingleMu/Run2012A-13Jul2012-v1/AOD=                                     &  190456 - 193621                      \\ 
+\verb=/SingleMu/Run2012B-13Jul2012-v1/AOD=                                     &  193834 - 196531   \\ 
+\verb=/SingleMu/Run2012C-24Aug2012-v1/AOD=                                   &   198022 - 198523                    \\ 
+\verb=/SingleMu/Run2012C-PromptReco-v2/AOD=                                  &   198934 - 203755                    \\ 
+\verb=/SingleMu/Run2012C-EcalRecover_11Dec2012-v1/AOD=          & 201 191 - 201191  \\
+\verb=/SingleMu/Run2012D-PromptReco-v1/AOD=                                  &  203768 - 208913    \\
+
+
+
+ \hline\hline
+\end{tabular}
+\caption{\label{tab:DilDsets_run}Datasets and run ranges used in combination which contain signal events.}
+\end{center}
+\end{table}
+
+
+
+\begin{table}[hbt]
+\begin{center}
+\begin{tabular}{lc}\hline\hline
+Name		& Run Range \\ \hline
+\verb=/DoubleMu/Run2012A-recover-06Aug2012-v1/AOD=                 &   190782 - 190949\\ 
+\verb=/DoubleMu/Run2012A-13Jul2012-v1/AOD=                                  &  190456 - 193621                     \\ 
+\verb=/DoubleMu/Run2012B-13Jul2012-v4/AOD=                                  &  193834 - 196531                     \\ 
+\verb=/DoubleMu/Run2012C-24Aug2012-v1/AOD=                                &  197770 - 198913 \\  
+\verb=/DoubleMu/Run2012C-PromptReco-v2/AOD=                               &  198934 - 203755                     \\ 
+\verb=/DoubleMu/Run2012D-PromptReco-v1/AOD=                               &  203768 - 208913  \\
+\verb=/DoubleMu/Run2012D-16Jan2013-v1/AOD=                                 &  207883 - 208307  \\
+
+\verb=/DoubleElectron/Run2012A-recover-06Aug2012-v1/AOD=         &   190782 - 190949                    \\ 
+\verb=/DoubleElectron/Run2012A-13Jul2012-v1/AOD=                         & 190456 - 193621                      \\ 
+\verb=/DoubleElectron/Run2012B-13Jul2012-v1/AOD=                         &  193834 - 196531 \\ 
+\verb=/DoubleElectron/Run2012C-24Aug2012-v1/AOD=                       &   197770 - 198913                    \\ 
+\verb=/DoubleElectron/Run2012C-PromptReco-v2/AOD=                     &    198934 - 203755                  \\ 
+\verb=/DoubleElectron/Run2012D-PromptReco-v1/AOD=                      &  203768 - 208913  \\
+\verb=/DoubleElectron/Run2012D-16Jan2013-v2/AOD=                        &   207883 - 208307 \\
+
+\verb=/SingleMu/Run2012A-recover-06Aug2012-v1/AOD=                    &     190782 - 190949                  \\ 
+\verb=/SingleMu/Run2012A-13Jul2012-v1/AOD=                                     &  190456 - 193621                     \\ 
+\verb=/SingleMu/Run2012B-13Jul2012-v1/AOD=                                     &  193834 - 196531 \\ 
+\verb=/SingleMu/Run2012C-24Aug2012-v1/AOD=                                   &   198022 - 198523                   \\ 
+\verb=/SingleMu/Run2012C-PromptReco-v2/AOD=                                  &   198934 - 203755                    \\ 
+\verb=/SingleMu/Run2012D-PromptReco-v1/AOD=                                  &  203768 - 208913   \\
+ \hline\hline
+\end{tabular}
+\caption{\label{tab:App:FRDsets}Datasets used to measure the lepton fake rates.}
+\end{center}
+\end{table}
+
+
+
+\clearpage
