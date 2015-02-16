@@ -1,4 +1,7 @@
 \chapter{Background Estimation Methods}
+Production processes with final states that look similar to the signal process are known as backgrounds. Selections are set with the intent of reducing backgrounds as much as possible (purity), while not eliminating the signal (efficiency). These selections were described in Sec~\ref{ch:EventSelections}. The backgrounds manage to pass the selections due to a variety of reasons, some of which are outlined in Sec~\ref{sec:background_sources}. During the course of measuring a production processes's cross section (in this case \ttZ), the number of signal events passing the selections is important in determining the cross section. Total measured events passing the cross section will contain both signal events as well as background events. Methods, must be developed to estimate the total number of background events so that that total may be subtracted in order to achieve an estimate of the total number of signal events. The following chapter discusses a variety of methods used to estimate the backgrounds to the measurement of the \ttZ cross section in a 3 lepton final state.\\
+
+
 	\section{Monte Carlo Based Estimation}
 	\label{sec:irreducible_estimation}
 	
@@ -19,7 +22,7 @@ Monte Carlo simulations are used to estimate contributions from the following SM
 
 \begin{itemize}
 \item \WZZ, \ttWW, \ttW, \tbZ, \ttG, and \ttH with three real leptons in the final state.
-\item \ZZZ with 4 real leptons (one of which is out of acceptance or fails identification or isolation) and 2 b-tags.
+\item \ZZZ with four real leptons (one of which is out of acceptance or fails identification or isolation) and two b-tags.
 %\item $W\gamma$ with one real lepton and a photon conversion. 
 %This background is a priori not estimated by the fake rate method
 %because the photon is generally isolated. 
@@ -71,7 +74,8 @@ Total &  0.98$\pm$0.08 \\
 		
 		
 		
-	\section{Data Derived Estimation}	
+	\section{Data Derived Estimation}
+	\label{sec:datadriven}
 	Two data driven methods are used to estimate backgrounds which arise due to 1) fake leptons causing an event to pass the selections (e.g. \ttbar \ plus 1 Fake Lepton from a jet) and 2) b-tags that do not come from a vector boson or top decay (e.g. WZ with b-tags possibly from a gluon). As described in Sec~\ref{sec:irreducible_estimation}, processes like these that are on the fringe and rely on less well understood production methods are not as well estimated in MC simulations. Thus, methods were developed to estimate them from data control regions.\\
 	\subsection{Estimation of Events Passing Selections Due to Fake Leptons}
 	\label{sec:fake_estimation}
@@ -84,7 +88,7 @@ Total &  0.98$\pm$0.08 \\
 		
 		An independent sample could be used to measure the rate at which a fake lepton that passes a looser, fake dominated selection will also pass the full measurement lepton selection. This rate is assumed to be universal and applicable to a wide variety of underlying processes, and thus the rate of fake leptons passing selections in a control region should be the same as those in the signal region.\\
 		
-       		\subsubsection{Overview of Fake Rate Method}
+       		\subsubsection{Overview of Fake Rate Method and Selections}
 		In this method, we measure two types of leptons: a ``numerator" lepton passing the full analysis lepton identification and isolation requirement  and a "denominator" lepton passing the analysis selections with relaxed isolation and impact parameter requirement. The ratio of numerator objects to denominator objects is known as a ``fake rate," ``FR," or ``tight to loose ratio."  The fake rate is measured in an independent data sample of multi-jet events (for closure tests, QCD Monte Carlo is used). The fake rate is divided into bins of lepton \pt \ and \aeta \ as there is a loose dependance on these two variables. The fake rate is measured independently for electrons and muons.\\
 
 The numerator selections are defined in Sec~\ref{sec:ElectronSelections} for electrons and Sec~\ref{sec:MuonSelections} for muons. To define the denominator selections the following numerator selections are relaxed.\\\\
@@ -104,7 +108,7 @@ For the Muons:
 
 Thus this method uses an extrapolation in isolation and impact parameter and can predict fake leptons from jets in a wide variety of physics scenarios.\\
 
-The fake rate is measured in multi-jet (inclusive QCD) events in data and selected using a single lepton trigger. The samples and triggers used are listed in ~\ref{sec:data_details}. The triggers used are pre-scaled utility triggers with very similar lepton object definitions to the leptonic triggers required for the signal selection. A single electron or muon is required in the events passing the denominator selections above. Additional requirements are placed to reduce contributions from electroweak decay. To suppress W contribution, we require  \MET  $\lt 20$ \GeV \ and \Mt $\lt 25$ \GeV. To suppress Z contribution, we require that there not be an additional lepton passing the fakeable object definition and forming an invariant mass with a fully identified lepton of the same flavor within 71 and 111 GeV. Furthermore, events satisfying the following criteria are vetoed to suppress Z contribution:\\\\
+The fake rate is measured in multi-jet (inclusive QCD) events in data and selected using a single lepton trigger. The samples and triggers used are listed in~\ref{ch:samples}. The triggers used are pre-scaled utility triggers with very similar lepton object definitions to the leptonic triggers required for the signal selection. A single electron or muon is required in the events passing the denominator selections above. Additional requirements are placed to reduce contributions from electroweak decay. To suppress W contribution, we require  \MET  $\lt 20$ \GeV \ and \Mt $\lt 25$ \GeV. To suppress Z contribution, we require that there not be an additional lepton passing the fakeable object definition and forming an invariant mass with a fully identified lepton of the same flavor within 71 and 111 GeV. Furthermore, events satisfying the following criteria are vetoed to suppress Z contribution:\\\\
 For Electrons:
 \begin{itemize}
 \item at least one extra fakeable object with $\pt \gt 10 \ \GeV$ is present
@@ -118,12 +122,7 @@ For Muons:
 \item there is a muon (no identification requirement) with $\pt \gt 10 \ \GeV$ making an opposite-sign pair with the FO with an invariant mass between 8 and 12 \GeV (suppressing upsilon contribution)
 \end{itemize}
 
-In events, an "away" jet of \pt $\gt$ 40 \GeV is selected where "away" means that the jet is separated from the FO by $\Delta$R $\gt$ 1.0. The electron FR is selected on non-isolated triggers as shown in Table~\ref{tab:ElFRTriggers}. The muon FR is selected on all Single Muon triggers as shown in Table~\ref{tab:MuFRTriggers}. Results for the electron Fake Rate binned in \pt \ and \aeta \ are summarized in Table~\ref{tab:ElFR} and similar results for the muons are summarized in Table~\ref{tab:MuFR}.\\
-
-        		\subsubsection{Fake rate data sets and event selection}
-		
-		
-		
+In events, an "away" jet of \pt $\gt$ 40 \GeV is selected where "away" means that the jet is separated from the FO by $\Delta$R $\gt$ 1.0. The electron FR is selected on non-isolated triggers as shown in Table~\ref{tab:ElFRTriggers}. The muon FR is selected on all Single Muon triggers as shown in Table~\ref{tab:MuFRTriggers}. Results for the electron Fake Rate binned in \pt \ and \aeta \ are summarized in Table~\ref{tab:ElFR} and similar results for the muons are summarized in Table~\ref{tab:MuFR}.\\		
 		
 		
 		
@@ -144,9 +143,9 @@ In events, an "away" jet of \pt $\gt$ 40 \GeV is selected where "away" means tha
 		
 		
         		\subsubsection{Fake Rates for Electrons and Muons}
-		In the Fake Rate method, the FO \pt \ is restricted to $\lt 55(35) \ \GeV$ for electrons (muons). The values for the highest \pt \ range apply for all the \pt \ values in the sideband larger than this cutoff. The value is assumed to be flat, but using FOs with a maximum \pt \ to measure the Fake Rate helps to suppress electro-weak contamination. Tables~\ref{tab:ElFR} and~\ref{MuFR} list the measured fake rates and statistical errors.
+		In the Fake Rate method, the FO \pt \ is restricted to $\lt 55(35) \ \GeV$ for electrons (muons). The values for the highest \pt \ range apply for all the \pt \ values in the sideband larger than this cutoff. The value is assumed to be flat, but using FOs with a maximum \pt \ to measure the Fake Rate helps to suppress electro-weak contamination. Tables~\ref{tab:ElFR} and~\ref{tab:MuFR} list the measured fake rates and statistical errors.
 		
-		\begin{table}[h]
+		\begin{sidewaystable}[h]
 \begin{center}
 \caption{\small \label{tab:ElFR} Fake Rate for electrons in data binned in \pt \ and \aeta. Errors are statistical only.}
 \begin{tabular}{c|ccccc} \hline \hline
@@ -159,9 +158,9 @@ In events, an "away" jet of \pt $\gt$ 40 \GeV is selected where "away" means tha
  \hline
 \end{tabular}
 \end{center}
-\end{table}
+\end{sidewaystable}
 
-\begin{table}[h]
+\begin{sidewaystable}[h]
 \begin{center}
 \caption{\small \label{tab:MuFR} Fake Rate for muons in data binned in \pt \ and \aeta. Errors are statistical only.}
 \begin{tabular}{c|ccccc} \hline \hline
@@ -174,13 +173,13 @@ In events, an "away" jet of \pt $\gt$ 40 \GeV is selected where "away" means tha
  \hline
 \end{tabular}
 \end{center}
-\end{table}
+\end{sidewaystable}
 
 
-
+\clearpage
 
 \subsubsection{Determining the Uncertainty in the Fake Rate Prediction}
-The performance of this method has been demonstrated in the past~\cite{sspaper2011}, and a 50\% systematic was assessed. Given that there is a slightly different topology, this systematic will be re-assessed. Here we have performed a closure test in 2 ways and summarize the results below. The first test is designed to show how well the method predicts truth matched fake leptons in a major background (\ttbar, which from pure MC appears to be almost the entirety of the background). This means that the lepton FOs used in the sideband are anti-matched at generator level to a W or Z. By excluding leptons from a W or Z that just happen to fail the isolation requirement for some reason (perhaps by overlapping with a low energy pile up jet), real leptons are not included while trying to show the closure. The full analysis selections are applied to the di-lepton \ttbar \ sample listed in Appendix~\ref{sec:mc_details} where the third lepton is allowed to pass only the relaxed FO selections and anti-truth matched to a W or Z. The other 2 full numerator leptons are required to be generator matched to a W. This sideband is then used with a QCD MC derived fake rate to predict the \ttbar \ contribution. The predicted number is compared to the measured number from pure MC. The closure test is summarized in Table~\ref{tab:frgenclosure}. Ideally this closure test should be performed in more background samples such as WW, ZZ, or DY decaying to 2 real leptons, but due to an insufficient number of events, these samples are statistically limited, and a closure test is inconclusive. As seen in Table~\ref{tab:fakeMCYields}, this is not an issue as we expect the \ttbar \ to be the dominant source of events with fake leptons.\\
+The performance of this method has been demonstrated in the past~\cite{sspaper2011}, and a 50\% systematic was assessed. Given that there is a slightly different topology, this systematic will be re-assessed. Here we have performed a closure test in two ways and summarize the results below. The first test is designed to show how well the method predicts truth matched fake leptons in a major background (\ttbar, which from pure MC appears to be almost the entirety of the background). This means that the lepton FOs used in the sideband are anti-matched at generator level to a W or Z. By excluding leptons from a W or Z that just happen to fail the isolation requirement for some reason (perhaps by overlapping with a low energy pile up jet), real leptons are not included while trying to show the closure. The full analysis selections are applied to the di-lepton \ttbar \ sample listed in Appendix~\ref{sec:mc_details} where the third lepton is allowed to pass only the relaxed FO selections and anti-truth matched to a W or Z. The other two full numerator leptons are required to be generator matched to a W. This sideband is then used with a QCD MC derived fake rate to predict the \ttbar \ contribution. The predicted number is compared to the measured number from pure MC. The closure test is summarized in Table~\ref{tab:frgenclosure}. Ideally this closure test should be performed in more background samples such as WW, ZZ, or DY decaying to two real leptons, but due to an insufficient number of events, these samples are statistically limited, and a closure test is inconclusive. As seen in Table~\ref{tab:fakeMCYields}, this is not an issue as we expect the \ttbar \ to be the dominant source of events with fake leptons.\\
 
 
 \begin{table}[ht!]
@@ -227,10 +226,10 @@ It is clear that the closure test is not statistically sound as the closure is t
 
 
 \subsubsection{Prediction Due to the Fake Rate Method}
-		The final background prediction from the Fake Rate method is performed on data and corrected for ``spillage." Spillage predictions are subtracted from the data Fake Rate prediction (Table~\ref{tab:spillage}). We define spillage as an event with 3 prompt leptons where one never-the-less fails the isolation cut and contributes to the sideband (e.g. \ttW to 3 real leptons where one is not-isolated). These are calculated by using MC simulations of sidebands of the samples that contribute to the spillage and making predictions using the data derived FR.
+		The final background prediction from the Fake Rate method is performed on data and corrected for ``spillage." Spillage predictions are subtracted from the data Fake Rate prediction (Table~\ref{tab:spillage}). We define spillage as an event with three prompt leptons where one nevertheless fails the isolation cut and contributes to the sideband (e.g. \ttW to three real leptons where one is not-isolated). These are calculated by using MC simulations of sidebands of the samples that contribute to the spillage and making predictions using the data derived FR.
 %\item The prediction is rescaled based on the closer test results. Systematics are kept the same since the accuracy of the method has not changed, but this should supply a more accurate central value for the prediction.
 
-\begin{table}[ht!]
+\begin{sidewaystable}[ht!]
 \begin{center}
 \caption{\small \label{tab:spillage} Spillage prediction for correcting the Fake Rate prediction. Errors are statistical only.}
 \begin{tabular}{c|ccccc}\hline
@@ -245,11 +244,11 @@ Contribution From Spillage                         & 0.52$\pm$0.04 & 0.18$\pm$0.
 \hline
 \end{tabular}
 \end{center}
-\end{table}
+\end{sidewaystable}
 
 The Fake Rate prediction is summarized in Table~\ref{tab:FRPrediction}. It would be reasonable to scale this number by the value obtained in the closure test to create a more accurate prediction. The closure value, however, does not have enough statistical precision to do so here with confidence. It is within 1 $\sigma$ of 1.0 in the closure test in Table~\ref{tab:fraggregateclosure} and very nearly within 1 $\sigma$ in the closure test in Table~\ref{tab:frgenclosure}. Given this compatibility with 1.0, a correction based on the closure is not applied.\\
 
-\begin{table}[ht!]
+\begin{sidewaystable}[ht!]
 \begin{center}
 \caption{\small \label{tab:FRPrediction} Fake Rate prediction corrected for spillage. Errors are statistical only.}
 \begin{tabular}{c|ccccc}\hline
@@ -262,14 +261,14 @@ Prediction from Data (19.5 fb$^{-1}$)          & 1.65$\pm$0.51   & 0.37$\pm$0.27
 Data - Spillage                               & 1.13$\pm$0.51   & 0.19$\pm$0.27   & 0.11$\pm$0.20   & 0.35$\pm$0.26   & 0.48$\pm$0.29 \\
 \end{tabular}
 \end{center}
-\end{table}
+\end{sidewaystable}
 
 
 The final prediction after correcting the Fake Rate for electroweak contamination and correcting the prediction for spillage is 1.13$\pm$0.51$_{st} \pm$0.57$_{sy}$.
 
 
 
-
+\clearpage
 
 
 
@@ -285,26 +284,26 @@ The final prediction after correcting the Fake Rate for electroweak contaminatio
 		
 	\subsection{Estimation of Events Passing Selections with Non-top b-quarks}
 	\label{sec:brate_estimation}
-	The estimation of background contribution from events with b-tags that do not originate from top, W, or Z  comes from a method that measures the rate of production of b-tags that come from radiation jets. This applies to production processes that to first order do not produce jets (e.g. WZ to 3 leptons). In this situation, any resultant jets must come from initial state radiation (ISR) or from pileup. We assume then that all of the b-tags are either mis-tags from light flavor jets or b-Jets from gluon splitting. Given that these b-tags originate from before the hard collision, they should be final state independent. Therefore we would expect the rate of b-tags to be similar between two samples with no jets expected at first order (e.g. Z to 2 leptons and WZ to 3 leptons should have the same fraction of events with b-tags). Therefore the rate from a mutually exclusive 2 lepton region can then be used to estimate the contribution from events with b-tags from radiation in a 3 lepton region.
+	The estimation of background contribution from events with b-tags that do not originate from top, W, or Z  comes from a method that measures the rate of production of b-tags that come from radiation jets. This applies to production processes that to first order do not produce jets (e.g. WZ to three leptons). In this situation, any resultant jets must come from initial state radiation (ISR) or from pileup. We assume then that all of the b-tags are either mis-tags from light flavor jets or b-Jets from gluon splitting. Given that these b-tags originate from before the hard collision, they should be final state independent. Therefore we would expect the rate of b-tags to be similar between two samples with no jets expected at first order (e.g. Z to two leptons and WZ to three leptons should have the same fraction of events with b-tags). Therefore the rate from a mutually exclusive two lepton region can then be used to estimate the contribution from events with b-tags from radiation in a three lepton region.
 	
 %        		\subsubsection{re-describe source of b-tags not from a top}
 %		needed?
 		
         		\subsubsection{Overview of Measuring the Rate of b-tags}
-		This method measures the ratio of number of events with 2 b-tags to number of events with no b-tags in a di-lepton control sample with the same Z selections as in the full tri-lepton analysis and additionally the same requirement of 4 jets. To remove \ttbar \ contamination, an opposite flavor subtraction is performed where the contribution of \ttbar \ is estimated by events with 1 electron and 1 muon instead of 2 leptons of the same flavor. The control region is high in statistics and heavily dominated by Z events.  This rate is then multiplied by the number of tri-lepton events with 4 jets and no b-tags to estimate the number of same with b-tags. The b-Veto region in the tri-lepton selection is heavily dominated by WZ events.\\
+		This method measures the ratio of number of events with two b-tags to number of events with no b-tags in a di-lepton control sample with the same Z selections as in the full tri-lepton analysis and additionally the same requirement of four jets. To remove \ttbar \ contamination, an opposite flavor subtraction is performed where the contribution of \ttbar \ is estimated by events with one electron and one muon instead of two leptons of the same flavor. The control region is high in statistics and heavily dominated by Z events.  This rate is then multiplied by the number of tri-lepton events with four jets and no b-tags to estimate the number of same with b-tags. The b-Veto region in the tri-lepton selection is heavily dominated by WZ events.\\
 
-The relationship between the 2 relevant samples, WZ and Z, is demonstrated in Figure~\ref{fig:wz_v_dy_btags} in MC. The WZ sample and Z sample were generated with the same conditions in Madgraph and thus contain the same physics. The inclusive madgraph Z sample listed in Table~\ref{tab:bRateComparison} was used because the jet binned sample used elsewhere in this paper (Table~\ref{tab:frEstimatedMCSamples}) contains massive b-quarks while the inclusive Z sample and the WZ sample contain massless b-quarks. Agreement across multiple different b-tag requirements is good and gives confidence to this method.\\
+The relationship between the two relevant samples, WZ and Z, is demonstrated in Figure~\ref{fig:wz_v_dy_btags} in MC. The WZ sample and Z sample were generated with the same conditions in Madgraph and thus contain the same physics. The inclusive Madgraph Z sample listed in Table~\ref{tab:App:bRateComparison} was used because the jet binned sample used elsewhere in this paper (Table~\ref{tab:frEstimatedMCSamples}) contains massive b-quarks while the inclusive Z sample and the WZ sample contain massless b-quarks. Agreement across multiple different b-tag requirements is good and gives confidence to this method.\\
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=0.90\linewidth]{Figs/WZ_Vs_DY_bComposition.pdf}
 \caption{\label{fig:wz_v_dy_btags}
-The b-tag composition of WZ and Z events in MC. In this plot, the first 2 bins (``None" and ``Loose") add up to the total number of events in the sample. The rest of the bins are a subset of the ``Loose" bin which shows the fraction of events with at least one CSV Loose b-tag. The bin labeled ``LL" means that this is the fraction of events with at least 2 CSV Loose b-tags. ``LM" means at least 1 Loose and 1 Medium, and so on. The WZ and Z samples are in good enough agreement for this purpose.
+The b-tag composition of WZ and Z events in MC. In this plot, the first 2 bins (``None" and ``Loose") add up to the total number of events in the sample. The rest of the bins are a subset of the ``Loose" bin which shows the fraction of events with at least one CSV Loose b-tag. The bin labeled ``LL" means that this is the fraction of events with at least two CSV Loose b-tags. ``LM" means at least one Loose and one Medium, and so on. The WZ and Z samples are in good enough agreement for this purpose.
 }
 \end{center}
 \end{figure}
 
-In data, control region events are required to pass the same mono- and di-lepton triggers as in the full analysis (there is a third lepton veto to make this region exclusive with the signal selection and thus the tri-lepton triggers are not used). The di-lepton event uses the same lepton requirements as are on the 2 leptons that are reconstructed as a Z in the tri-lepton selections in Section~\ref{sec:ElectronSelections}. Two mutually exclusive regions are defined, one with 1 CSV Loose b-tag and 1 CSV Medium b-tag used as the numerator of the ratio and one with a b-veto (i.e. 0 Loose b-tags) used as the denominator of the ratio. These regions (particularly the b-tagged region) are contaminated with \ttbar \ events. A similar selection is made with the requirement that the di-lepton events contain two leptons that are different flavors (i.e. 1 electron and 1 muon), and this yield is subtracted from the Z like events to remove \ttbar \ contamination. The \ttbar \ estimate relies on the fact that the tops have final state decays into same flavor leptons at roughly the same rate as opposite flavor leptons. This creates a highly pure Z sample from which to determine the ratio. The constituents of the ratio are shown in both data and MC in Table ~\ref{tab:brate}
+In data, control region events are required to pass the same mono- and di-lepton triggers as in the full analysis (there is a third lepton veto to make this region exclusive with the signal selection and thus the tri-lepton triggers are not used). The di-lepton event uses the same lepton requirements as are on the two leptons that are reconstructed as a Z in the tri-lepton selections in Section~\ref{sec:ElectronSelections}. Two mutually exclusive regions are defined, one with one CSV Loose b-tag and one CSV Medium b-tag used as the numerator of the ratio and one with a b-veto (i.e. zero Loose b-tags) used as the denominator of the ratio. These regions (particularly the b-tagged region) are contaminated with \ttbar \ events. A similar selection is made with the requirement that the di-lepton events contain two leptons that are different flavors (i.e. one electron and one muon), and this yield is subtracted from the Z like events to remove \ttbar \ contamination. The \ttbar \ estimate relies on the fact that the tops have final state decays into same flavor leptons at roughly the same rate as opposite flavor leptons. This creates a highly pure Z sample from which to determine the ratio. The constituents of the ratio are shown in both data and MC in Table ~\ref{tab:brate}
 
 \begin{table}[ht!]
 \begin{center}
@@ -334,7 +333,7 @@ Data (19.5 fb$^{-1}$)                           & 24629.00$\pm$157.53 & 3874.00$
 		
 		
         		\subsubsection{Determining the Uncertainty in the Prediction from the b-tag Rate}
-		A closure test on the accuracy of this method's predictions is performed in 2 ways. The first method is designed to show the integrity of the underlying assumption of the method that b-tag rates are independent of final states. The results are summarized in Table~\ref{tab:wz_z_brateclosure}. The rate of b-tags is measured in pure Z to 2 leptons with jets in MC and applied to a b-Veto region in our WZ, ZZ, and WWV samples with jets in MC. All three are included because they contribute and have enough statistics to be meaningful. This prediction is compared to the number of events measured in the 2 b-tag region for the pure WZ, ZZ, and WWV samples. The second test is designed to show the performance of the method in a sample with other types of processes than radiation producing jets that get b-tagged. The rate of b-tags is measured in a full cocktail of MC samples (with opposite flavor subtraction) with a 2 lepton and jets final state. This is then applied again to the WZ, ZZ, WWV samples with a 3 leptons and jets final state. The prediction is then compared to the measurement of 3 lepton and jets with b-tags in the same cocktail of MC. The results for the second test are summarized in Table~\ref{tab:mcsoup_brateclosure}.\\
+		A closure test on the accuracy of this method's predictions is performed in two ways. The first method is designed to show the integrity of the underlying assumption of the method that b-tag rates are independent of final states. The results are summarized in Table~\ref{tab:wz_z_brateclosure}. The rate of b-tags is measured in pure Z to two leptons with jets in MC and applied to a b-Veto region in our WZ, ZZ, and WWV samples with jets in MC. All three are included because they contribute and have enough statistics to be meaningful. This prediction is compared to the number of events measured in the two b-tag region for the pure WZ, ZZ, and WWV samples. The second test is designed to show the performance of the method in a sample with other types of processes than radiation producing jets that get b-tagged. The rate of b-tags is measured in a full cocktail of MC samples (with opposite flavor subtraction) with a two lepton and jets final state. This is then applied again to the WZ, ZZ, WWV samples with a three leptons and jets final state. The prediction is then compared to the measurement of three lepton and jets with b-tags in the same cocktail of MC. The results for the second test are summarized in Table~\ref{tab:mcsoup_brateclosure}.\\
 
 \begin{table}[ht!]
 \begin{center}
@@ -350,7 +349,7 @@ WZ$\rightarrow 3\ell $ , ZZ$\rightarrow 4\ell$ , WWV  &  1.56$\pm$0.14 & 1.19$\p
 
 \begin{table}[ht!]
 \begin{center}
-\caption{\small \label{tab:mcsoup_brateclosure} Comparing the prediction of pure WZ, ZZ, and WWV MC events in a tri-lepton selection with b-tags from b-tag rates in a cocktail of MC events in 2 lepton final state.}
+\caption{\small \label{tab:mcsoup_brateclosure} Comparing the prediction of pure WZ, ZZ, and WWV MC events in a tri-lepton selection with b-tags from b-tag rates in a cocktail of MC events in two lepton final state.}
 \begin{tabular}{c|ccc}\hline
                                                                                                & Predicted             & Observed          & Pred. / Obs.\\
 \hline \hline
@@ -360,7 +359,7 @@ WZ$\rightarrow 3\ell $ , ZZ$\rightarrow 4\ell $ , WWV & $1.65 \pm 0.14$ & $1.19\
 \end{center}
 \end{table}
 
-Based on the closure test results (Tables~\ref{tab:wz_z_brateclosure} and~\ref{tab:mcsoup_brateclosure}) and the agreement between data and MC shown in Table~\ref{tab:brate} a 50\% systematic will be assessed on the prediction from this method.\\
+Based on the closure test results (Tables~\ref{tab:wz_z_brateclosure} and~\ref{tab:mcsoup_brateclosure}) and the agreement between data and MC shown in Table~\ref{tab:brate}, a 50\% systematic will be assessed on the prediction from this method.\\
 		
 		
         		\subsubsection{Predictions Due to the b-tag Rate Method}

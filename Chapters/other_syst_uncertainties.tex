@@ -1,11 +1,11 @@
-\chapter{Other Uncertainties Due to use of Simulations}
+\chapter{Other Uncertainties Due to Use of Simulations}
 \section{Uncertainties  Involved in Event Generation}
-The previous Chapter was concerned with uncertainties due to reconstructed and identified quantities in the MC simulations. The following Chapter will discuss uncertainties in the simulation at a lower level, at the level of event generation. These can come from the parton distribution functions used, masses used for particles, or the order to which calculations are performed.\\ 
+The previous chapter was concerned with uncertainties due to reconstructed and identified quantities in the MC simulations. The following chapter will discuss uncertainties in the simulation at a lower level, at the level of event generation. These can come from the parton distribution functions used, masses used for particles, or the order to which calculations are performed.\\ 
 
 \subsection{Uncertainties Due to Parton Distribution Functions}	
 Proton-proton interactions are not as straightforward as single particle interactions (e.g. electron-electron). Although the theory for quarks interacting or gluons interacting is well understood, interaction between composite objects are much more complicated. Parton Distribution Functions enter to help describe the probability density of finding a particular particle inside the proton with a certain longitudinal momentum fraction at a specific resolution (Q$^2$). Due to the non-perturbative nature of the partons which are not seen as free particles, this cannot be calculated via perturbative QCD. External methods must be used to probe the structure and distribution of the proton. This measured structure can then be used within a theoretical framework. Experimental error must be assessed to determine the impact of choosing different PDFs for the MC simulations.\\
 
-The recommendations of the PDF4LHC~\cite{PDF4LHC} group are followed for estimating the acceptance uncertainty from the PDF. The predictions from CT10, MSTW, and NNPDF sets are used. The LHAPDF package is used for PDFs and the re-weight function. Each set and all of it's error subsets are run over and used to re-weight the \ttZ \ MC to determine an acceptance. MC events are re-weighted from the generator PDF (CTEQ6) to the variation based on the parton type and momentum.\\
+The recommendations of the PDF4LHC~\cite{PDF4LHC} group are followed for estimating the acceptance uncertainty from the PDF. The predictions from CT10, MSTW, and NNPDF sets are used. The LHAPDF package is used for PDFs and the re-weight function. Each set and all of its error subsets are run over and used to re-weight the \ttZ \ MC to determine an acceptance. MC events are re-weighted from the generator PDF (CTEQ6) to the variation based on the parton type and momentum.\\
 
 \subsubsection{CT10}
 The PDF uncertainty for CT10 is calculated by
@@ -20,8 +20,7 @@ The PDF uncertainty for CT10 is calculated by
 where $A_0$ is computed with the central PDF, i runs over the error sets, $A^{+}$ and $A^{-}$ denote the up and down errors respectively on the acceptances of the ith eigenvector subset. The $\alpha _s$ uncertainty is obtained by considering PDFs for $\alpha _s$ = 0.116, 0.117, 0.118, 0.119, 0.120. The same equations above are applied to these subsets. Finally, it is noted that the PDFs for CT10 are at 90\% CL variations and thus the results are scaled down by 1.645 to obtain the 68\% CL uncertainty.
 	
 \subsubsection{MSTW}
-Five different sets are used for MSTW with $\alpha _s = \alpha _s ^ 0$, $\alpha _s ^ 0 \pm 0.5 \sigma$, and $\alpha _s ^ 0 \pm \sigma$. The uncertainty is given with the following formulae\\
-
+Five different sets are used for MSTW with $\alpha _s = \alpha _s ^ 0$, $\alpha _s ^ 0 \pm 0.5 \sigma$, and $\alpha _s ^ 0 \pm \sigma$. The uncertainty is given with the following formulae:
 \begin{equation}
 \Delta A^{+} = \underset{\alpha _s}{\max} [ A_{\alpha _ s} + \Delta A_{\alpha _s} ]  - A_0,  
 \end{equation}
@@ -44,7 +43,7 @@ $N_{rep}$                &  5         &  27      &  72      &   100   &  72     
 \end{tabular}
 \end{center}
 \end{table}
-The uncertainty is computed using the following equations,
+The uncertainty is computed using the following equations:
 \begin{equation}
 \Delta A ^{+} = \sqrt{  \frac{1}{N^{+} - 1} \sum \limits_{i=1}^{N^{+}} (A_i - A_0)^2},
 \end{equation}
@@ -54,16 +53,16 @@ The uncertainty is computed using the following equations,
 with $A_0$ computed front he central value PDF at $\alpha = 0.119$, i running over the $N^{+}$ replicas where $A_i$ \gt $A_0$, and j running over the $N^{-}$ replicas with $A_j$ \lt $A_0$.\\
 
 \subsubsection{Combined Results}
-To combine the measurements into one error, the uncertainty is computed as follows
+To combine the measurements into one error, the uncertainty is computed with the following equations:
 \begin{equation}
-\Delta _{\max} = \underset{i}{\max}  [A_i + \Delta A^{+} _i]
+\Delta _{\max} = \underset{i}{\max}  [A_i + \Delta A^{+} _i],
 \end{equation}
 \begin{equation}
-\Delta _{\min} = \underset{i}{\min}  [A_i - \Delta A^{-} _i]
+\Delta _{\min} = \underset{i}{\min}  [A_i - \Delta A^{-} _i],
 \end{equation}
 and the PDF uncertainty is
 \begin{equation}
-Unc_{PDF} = \frac{1}{2}(\Delta _{max} - \Delta _{min} )
+Unc_{PDF} = \frac{1}{2}(\Delta _{max} - \Delta _{min} ),
 \end{equation}
 where i runs over all of the PDF sets listed above.\\
 
@@ -72,7 +71,7 @@ Using this procedure, yields an uncertainty of 1.5\%.
 
 
 \subsection{Uncertainties Measured in Top Samples}
-A number of uncertainties are measured by varying parameters in top samples. Ideally, these parameters should be varied in a \ttZ \ sample, but since none were produced centrally by CMS, already existing \ttbar samples were used with analogous cuts to the \ttZ \ analysis. that is one lepton was selected, 2 b-tagged jets, and an additional 2 jets. These samples are listed in Table~\ref{tab:sampleupdown}.
+A number of uncertainties are measured by varying parameters in top samples. Ideally, these parameters should be varied in a \ttZ \ sample, but since none were produced centrally by CMS, already existing \ttbar samples were used with analogous cuts to the \ttZ \ analysis. that is one lepton was selected, two b-tagged jets, and an additional two jets. These samples are listed in Table~\ref{tab:sampleupdown}.
 
 \begin{table}[h]
 \begin{center}
@@ -90,7 +89,7 @@ Sample   \\ \hline
 \end{center}
 \end{table}
 
-In order to use the \ttbar \ samples, the full analysis selections must be modified to become a mono-lepton selection instead of a tri-lepton selection, so that only prompt leptons are considered and the jet production methods remain the same. In essence this just removes the Z selection. There is an additional benefit from this modified selection in that it creates a high statistics region to derive the systematic errors. The number of events passing the modified selections in each sample are compared to the number of generator level events with 1 lepton. The \verb=/TTJets_SemiLeptMGDecays_8TeV-madgraph/Su12_V7A_ext-v1/AODSIM=  (where Su12 stands for ``Summer12\_DR53X-PU\_S10\_START53'') sample is used to produce a central value, and the fraction passing from the varied samples is compared to the fraction passing from the central value to determine the systematic error on each variation. The results are summarized in Table ~\ref{tab:systupdown}.
+In order to use the \ttbar \ samples, the full analysis selections must be modified to become a mono-lepton selection instead of a tri-lepton selection, so that only prompt leptons are considered and the jet production methods remain the same. In essence this just removes the Z selection. There is an additional benefit from this modified selection in that it creates a high statistics region to derive the systematic errors. The number of events passing the modified selections in each sample are compared to the number of generator level events with 1 lepton. The /TTJets\_SemiLeptMGDecays\_8TeV-madgraph/Su12\_V7A\_ext-v1/AODSIM  (where Su12 stands for ``Summer12\_DR53X-PU\_S10\_START53'') sample is used to produce a central value, and the fraction passing from the varied samples is compared to the fraction passing from the central value to determine the systematic error on each variation. The results are summarized in Table ~\ref{tab:systupdown}.
 
 \subsubsection{Uncertainties Due to Parton Momentum Transfer}
 Proton structures can be probed with electrons and the inelastic scattering follows a scaling known as Bjorken scaling. This scaling depends on the momentum transfer produced by the photon force carrier in the interaction. This momentum is in the form of a 4-vector and included in the scaling as a quadratic (written as Q$^2$).\\
@@ -116,7 +115,8 @@ Matching Down  & 0.267 & 0.8\% & \\
 Mass 166.5         & 0.251 & -5.2\% & Use half \\
 Mass 178.5         & 0.277 & 4.5\% & Use half \\
 \hline
-Total                     &             & 3.3\% & Used half of Mass variation \\
+Total                     &             & 3.3\% & Used half of\\
+                              &             &             & Mass variation \\
 \hline
 \end{tabular}
 \end{center}
@@ -126,7 +126,7 @@ Total                     &             & 3.3\% & Used half of Mass variation \\
 
 \subsection{Uncertainties Due to Generator}	
 
-The MC samples used in this analysis are primarily generated with the Madgraph event generator. Madgraph produces events at Leading Order. This may lead to a change in acceptance of the events compared to an NLO or NNLO event generator which comes into play with the signal acceptance. Despite the general belief that NLO samples are more accurate, Madgraph samples were still chosen here due to the inconsistent widespread availability of aMC@NLO samples as well as the fact that the available \ttZ \ and \ttW \ aMC@NLO were produced without final state photon radiation. To study this potential uncertainty, two \ttZ samples are used and are summarized in Table~\ref{tab:ttZGeneratorMCs}. The first is a Madgraph~\cite{Alwall:2011uj} sample which is used elsewhere in the analysis. The second is an aMC@NLO (~\cite{Frederix:2011zi, Frederix:2011ss} based on the MC@NLO formalism~\cite{Frixione:2002ik} and the MadGraph5 framework~\cite{Alwall:2011uj}) sample. \\
+The MC samples used in this analysis are primarily generated with the Madgraph event generator. Madgraph produces events at Leading Order. This may lead to a change in acceptance of the events compared to an NLO or NNLO event generator which comes into play with the signal acceptance. Despite the general belief that NLO samples are more accurate, Madgraph samples were still chosen here due to the inconsistent widespread availability of aMC@NLO samples as well as the fact that the available \ttZ \ and \ttW \ aMC@NLO were produced without final state photon radiation. To study this potential uncertainty, two \ttZ samples are used and are summarized in Table~\ref{tab:App:ttZGeneratorMCs}. The first is a Madgraph~\cite{Alwall:2011uj} sample which is used elsewhere in the analysis. The second is an aMC@NLO (~\cite{Frederix:2011zi, Frederix:2011ss} based on the MC@NLO formalism~\cite{Frixione:2002ik} and the MadGraph5 framework~\cite{Alwall:2011uj}) sample. \\
 
 
 
@@ -138,17 +138,17 @@ For each sample an efficiency ($\epsilon$) is prepared. The efficiency is define
 
 The exact selections for the denominator are:
 \begin{itemize}
-\item Exactly 3 status 3 generator leptons (electrons or muons)
+\item Exactly three status 3 generator leptons (electrons or muons)
 \item All of the above generator leptons with \pt \gt 20 \GeV and \aeta \lt 2.4.
 \item All of the above generator leptons came from a W or a Z.
-\item Exactly 3 reconstructed leptons (electrons or muons) that pass the identification and isolation selections in Sec~\ref{sec:EventSelections}
+\item Exactly three reconstructed leptons (electrons or muons) that pass the identification and isolation selections in Sec~\ref{sec:EventSelections}
 \item Reconstructed leptons that do not match the generator leptons above are rejected.
 \end{itemize}
 
 The exact selections for the numerator are:
 \begin{itemize}
 \item Denominator as above.
-\item At least 4 pfJets with applicable energy corrections with \pt \gt 20 \GeV and \aeta \lt 2.4. 
+\item At least four pfJets with applicable energy corrections with \pt \gt 20 \GeV and \aeta \lt 2.4. 
 \item Jets within a cone 0.5 of a lepton identified in the numerator are rejected.
 \item Jets with \lt 10\% of their energy coming from the primary vertex are rejected.
 \end{itemize}
@@ -175,17 +175,17 @@ After evaluating and comparing the efficiencies, The contribution to the signal 
 \section{Jet Energy Scale and Resolution}
 Jets are experimental signatures at particle detectors that seek to cluster together showering particles that came from a single source and treats that cluster as a composite object for the sake of the measurements. The accuracy of the energy in this jet are determined by both resolution and scale. The jet energy resolution is a determination of the spread of the distribution of the pull of the energy (pull = true - measured). This resolution is different between data and simulation and simulation must be corrected to be more accurate. This also introduces an uncertainty which must be assessed. Jet energy scaling seeks to address any systematic biases in the jet energy measurement and scales the measured energy by factors to correct it. There is still an associated uncertainty on the jet energy and the contribution of this due to the scale must also be measured.\\
 
-The jet energies have been corrected in data with a residual correction factor to account for differences between measured jet energies in data and in Monte Carlo~\cite{jes_ref}. These corrections come with uncertainties and thus matter for the signal acceptance. To account for this, we vary the jet transverse momenta up and down by the 1 standard deviation uncertainties and compare the change in predicted yields in MC. The resultant uncertainty is 4.8\% and is listed in Table~\ref{tab:systSumm}.\\
+The jet energies have been corrected in data with a residual correction factor to account for differences between measured jet energies in data and in Monte Carlo~\cite{jes_ref}. These corrections come with uncertainties and thus matter for the signal acceptance. To account for this, we vary the jets' transverse momenta up and down by the one standard deviation uncertainties and compare the change in predicted yields in MC. The resultant uncertainty is 4.8\% and is listed in Table~\ref{tab:systSumm}.\\
 
 The recommended prescription for determining uncertainty on the energy resolution of particle flow jets is outlined in~\cite{jer_ref}. Using signal Monte Carlo, the prescription was applied as follows:
 \begin{itemize}
-\item each reconstructed jet is matched to the closest generator jet within a cone of $\Delta R < 0.5$
-\item if a match is found the transverse momentum of the reconstructed jet is scaled by
+\item Each reconstructed jet is matched to the closest generator jet within a cone of $\Delta R < 0.5$.
+\item If a match is found the transverse momentum of the reconstructed jet is scaled by.
 \begin{equation}
 \pt \rightarrow max[0, \pt ^{gen} + c \times (\pt - \pt ^{gen})]
 \end{equation}
 where $\pt ^{gen}$ is the transverse momentum of the matched generator jet, and c is the data/MC scale factor between the measured and expected particle flow jet resolution in Table~\ref{tab:jer_scalefactor}.
-\item if no match is found a gaussian centered at unit and with a width of $c$ is used to smear the momentum instead
+\item If no match is found a gaussian centered at unit and with a width of $c$ is used to smear the momentum instead.
 \end{itemize}
 
 \begin{table}[h]
@@ -230,7 +230,7 @@ After following this procedure, the acceptance systematic due to Jet Energy Reso
 \section{Pile Up}
 In the LHC, large bunches of protons collide at a rapid rate. The rate of bunch crossings can theoretically be pushed to near the threshold of timing for the machine's electronics which can lead to residual energy still being measured in the detector from a previous collision during the current collision. This is called ``out of time pile up'' and is not an issue at the current rate of collisions for the LHC. Another form of pile up, known as ``in time pile up'' is an issue and is caused by multiple protons colliding within the crossing bunches.\\ 
 
-Proton collisions are frequent, but collisions that produce interesting outcomes are not. So the LHC allows many collisions to happen at once in hopes that one will be interesting. In time pile up occurs when one proton collision produces an outcome that physicists would like to study, but at the same time other collisions produce uninteresting outcomes that never-the-less add energy into the detector which may alter the appearance of the decay products of the collision that physicists want to investigate.\\
+Proton collisions are frequent, but collisions that produce interesting outcomes are not. So the LHC allows many collisions to happen at once in hopes that one will be interesting. In time pile up occurs when one proton collision produces an outcome that physicists would like to study, but at the same time other collisions produce uninteresting outcomes that nevertheless add energy into the detector which may alter the appearance of the decay products of the collision that physicists want to investigate.\\
 
 Several techniques are employed to mitigate this affect in the jet clustering algorithms, jet energy measurements, and the lepton energy measurements with most of the techniques reducing to some level of subtracting an average ambient energy which has been measured in minimum bias events. However, this still produces some level of uncertainty in the current measurements, and can matter for event acceptance (for example when determining the amount of energy in a cone around a lepton for an isolation measurement).\\
 
