@@ -10,7 +10,6 @@ Thus a variety of triggers were chosen that require two or more leptons (double 
 	
 \begin{table}[h]
 \begin{center}
-\caption{\small\label{tab:AnalysisTriggers} Triggers used while measuring the yields in data for the main analysis selections. In the trigger name the ``v" at the end of the line stands for a number of versions that change while data is being collected.}
 \begin{tabular}{l|l} \hline \hline
 Lepton Type & Trigger  \\ \hline
 $\mu\mu$     & \verb=HLT_Mu17_Mu8_v= \\
@@ -21,6 +20,7 @@ $\mu$e          & \verb=HLT_Mu17_Ele8_CaloIdT_CaloIsoVL_TrkIdVL_TrkIsoVL_v= \\
 $\mu$e          & \verb=HLT_Mu8_Ele17_CaloIdT_CaloIsoVL_TrkIdVL_TrkIsoVL_v= \\
 \hline
 \end{tabular}
+\caption{\label{tab:AnalysisTriggers} Triggers used while measuring the yields in data for the main analysis selections. In the trigger name the ``v" at the end of the line stands for a number of versions that change while data is being collected.}
 \end{center}
 \end{table}
 
@@ -179,7 +179,7 @@ These predictions are made with the assumption that no new systematic uncertanti
 As the window gets narrower beyond $\pm 10$ \GeV, the difference in scaling of the yields in Table ~\ref{tab:zmass_massscaling} becomes significant at approximately a difference of 4-5\%. These narrower mass windows would lead to challenges in estimating the systematic uncertainty introduced by the mass window as well as reduce the significance of that mass window. To avoid this extra difficulty, the $\pm 10$ \GeV \ window is chosen.\\
 
 \begin{table}[ht!]
-\caption{\small \label{tab:zmass_errorsig} Expected signficance and estimated \% error on the cross section by varying the Z mass window. Significance and error estimates are determined with full analysis selections and background estimates in conjunction with the \ttZ \ signal Monte Carlo.}
+
 \begin{center}
 \begin{tabular}{c|ccc}\hline
 Mass Window (\GeV)   &  Expected Significance  & \multicolumn{2}{c}{Estimated Error on Cross Section}    \\
@@ -193,6 +193,7 @@ $\pm 5$              &  2.51                   &  +51\%    &  -43\%             
 $\pm 2.5$            &  2.21                   &  +60\%    &  -49\%                                      \\
 \hline
 \end{tabular}
+\caption{ \label{tab:zmass_errorsig} Expected signficance and estimated \% error on the cross section by varying the Z mass window. Significance and error estimates are determined with full analysis selections and background estimates in conjunction with the \ttZ \ signal Monte Carlo.}
 \end{center}
 \end{table}
 
@@ -217,7 +218,6 @@ $\pm 2.5$            &  2.21                   &  +60\%    &  -49\%             
 
 
 \begin{sidewaystable}[ht!]
-\caption{\small \label{tab:zmass_massscaling} Scaling of yields in high statistics Z selection with Z mass window. The ``2 Lepton Data'' columns are important numbers in the calculation of the rate of b-tags and are used here because they are a high statistics selection of a Z boson. Statistical errors on the absolute yields in the \ttZ MC \ are between 5 and 6\%. Statistical errors on the DY MC are negligable while statistical errors on the 2 Lepton Data selection are between 0.5\% and 2\% where the DY MC with b-veto is clustered at the low end.}
 \begin{center}
 \begin{tabular}{c|ccccc}\hline
 Mass Window (\GeV)  & \ttZ \ MC   & 2 Lepton DY MC  & 2 Lepton Data  & 2 Lepton DY MC  & 2 Lepton Data  \\
@@ -232,5 +232,6 @@ $\pm 2.5$           &  65.3\%     &  61.5\%         & 56.8\%         & 60.9\%   
 
 \hline
 \end{tabular}
+\caption{\label{tab:zmass_massscaling} Scaling of yields in high statistics Z selection with Z mass window. The ``2 Lepton Data'' columns are important numbers in the calculation of the rate of b-tags and are used here because they are a high statistics selection of a Z boson. Statistical errors on the absolute yields in the \ttZ MC \ are between 5 and 6\%. Statistical errors on the DY MC are negligable while statistical errors on the 2 Lepton Data selection are between 0.5\% and 2\% where the DY MC with b-veto is clustered at the low end.}
 \end{center}
 \end{sidewaystable}

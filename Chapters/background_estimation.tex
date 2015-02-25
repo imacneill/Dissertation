@@ -45,7 +45,6 @@ Scale factors are applied to MC predictions to account for differences in lepton
 
 \begin{table}[ht!]
 \begin{center}
-\caption{\small \label{tab:irreducible_yields} Pure MC normalized to  \intLumi \ and scaled by differences between lepton selection efficiencies in Data and MC as well as b-tag efficiencies.}
 \begin{tabular}{c|c}\hline
 &Yields \\
 \hline \hline
@@ -60,6 +59,7 @@ Scale factors are applied to MC predictions to account for differences in lepton
 Total &  0.98$\pm$0.08 \\
 \hline
 \end{tabular}
+\caption{\label{tab:irreducible_yields} Pure MC normalized to  \intLumi \ and scaled by differences between lepton selection efficiencies in Data and MC as well as b-tag efficiencies.}
 \end{center}
 \end{table}
 		
@@ -147,7 +147,7 @@ In events, an "away" jet of \pt $\gt$ 40 \GeV is selected where "away" means tha
 		
 		\begin{sidewaystable}[h]
 \begin{center}
-\caption{\small \label{tab:ElFR} Fake Rate for electrons in data binned in \pt \ and \aeta. Errors are statistical only.}
+
 \begin{tabular}{c|ccccc} \hline \hline
 %\backslashbox{\aeta}{\pt}
 \aeta vs. \pt &          10 - 15 \GeV     & 15 - 20 \GeV            &  20 - 25 \GeV            & 25 - 35 \GeV            & 35 - 55 \GeV \\ \hline
@@ -157,12 +157,12 @@ In events, an "away" jet of \pt $\gt$ 40 \GeV is selected where "away" means tha
  2.0 - 2.5                            & 0.240 $\pm$ 0.011    & 0.209 $\pm$ 0.012 & 0.199 $\pm$ 0.014 & 0.226 $\pm$ 0.015 & 0.288 $\pm$ 0.022\\
  \hline
 \end{tabular}
+\caption{ \label{tab:ElFR} Fake Rate for electrons in data binned in \pt \ and \aeta. Errors are statistical only.}
 \end{center}
 \end{sidewaystable}
 
 \begin{sidewaystable}[h]
 \begin{center}
-\caption{\small \label{tab:MuFR} Fake Rate for muons in data binned in \pt \ and \aeta. Errors are statistical only.}
 \begin{tabular}{c|ccccc} \hline \hline
 % \backslashbox{\aeta}{\pt}
 \aeta vs. \pt &  5 - 10 \GeV             & 10 - 15 \GeV             & 15 - 20 \GeV            & 20 - 25 \GeV            & 25- 35 \GeV \\ \hline
@@ -172,6 +172,7 @@ In events, an "away" jet of \pt $\gt$ 40 \GeV is selected where "away" means tha
  2.0 - 2.5                              & 0.351 $\pm$ 0.017 & 0.327 $\pm$ 0.017 & 0.240 $\pm$ 0.012& 0.204 $\pm$ 0.012 & 0.232 $\pm$ 0.011\\
  \hline
 \end{tabular}
+\caption{ \label{tab:MuFR} Fake Rate for muons in data binned in \pt \ and \aeta. Errors are statistical only.}
 \end{center}
 \end{sidewaystable}
 
@@ -184,7 +185,7 @@ The performance of this method has been demonstrated in the past~\cite{sspaper20
 
 \begin{table}[ht!]
 \begin{center}
-\caption{\small \label{tab:fakeMCYields} MC yields for the samples expected to contribute events with fake leptons. \ttbar \ produces the majority of the events.}
+
 \begin{tabular}{c|c}\hline
 &Yields\\
 \hline \hline
@@ -194,18 +195,20 @@ $t\overline{t}$     &        0.32$\pm$0.12 \\
 DY $\rightarrow 2 \ell$  &   0.00$\pm$0.60 \\
 \hline
 \end{tabular}
+\caption{ \label{tab:fakeMCYields} MC yields for the samples expected to contribute events with fake leptons. \ttbar \ produces the majority of the events.}
 \end{center}
 \end{table}
 
 
 \begin{table}[h]
 \begin{center}
-\caption{\small \label{tab:frgenclosure} Closure of fake lepton prediction from QCD derived FR and \ttbar \ generator matched sideband.}
+
 \begin{tabular}{c|c|c|c} \hline \hline
  &                Prediction &Measured & Pre./Meas. \\ \hline
              \ttbar         & 0.49$\pm$0.08          & 0.28$\pm$0.10 &  1.75 $\pm$0.69  \\
  \hline
 \end{tabular}
+\caption{ \label{tab:frgenclosure} Closure of fake lepton prediction from QCD derived FR and \ttbar \ generator matched sideband.}
 \end{center}
 \end{table}
 
@@ -213,12 +216,13 @@ The second closure test is designed to demonstrate the accuracy of the method in
 
 \begin{table}[h]
 \begin{center}
-\caption{\small \label{tab:fraggregateclosure} Closure of fake lepton prediction from QCD FR and \ttbar \ sideband.}
+
 \begin{tabular}{c|c|c|c|c|c} \hline \hline
  &                Prediction &Measured & Pre./Meas. \\ \hline
              \ttbar         &      0.49$\pm$0.08     & 0.32$\pm$0.11 & 1.53$\pm$0.58   \\
  \hline
 \end{tabular}
+\caption{ \label{tab:fraggregateclosure} Closure of fake lepton prediction from QCD FR and \ttbar \ sideband.}
 \end{center}
 \end{table}
 
@@ -231,7 +235,7 @@ It is clear that the closure test is not statistically sound as the closure is t
 
 \begin{sidewaystable}[ht!]
 \begin{center}
-\caption{\small \label{tab:spillage} Spillage prediction for correcting the Fake Rate prediction. Errors are statistical only.}
+
 \begin{tabular}{c|ccccc}\hline
                                                    &Yields (All)     &Yields ($\mu\mu\mu$)  &Yields ($\mu\mu$e)  &Yields (ee$\mu$)   &Yields (eee)\\
 \hline \hline
@@ -243,6 +247,7 @@ WWV                                                & 0.01$\pm$0.00 & 0.00$\pm$0.
 Contribution From Spillage                         & 0.52$\pm$0.04 & 0.18$\pm$0.02 & 0.17$\pm$0.02 & 0.10$\pm$0.01 & 0.08$\pm$0.01 \\
 \hline
 \end{tabular}
+\caption{ \label{tab:spillage} Spillage prediction for correcting the Fake Rate prediction. Errors are statistical only.}
 \end{center}
 \end{sidewaystable}
 
@@ -250,7 +255,7 @@ The Fake Rate prediction is summarized in Table~\ref{tab:FRPrediction}. It would
 
 \begin{sidewaystable}[ht!]
 \begin{center}
-\caption{\small \label{tab:FRPrediction} Fake Rate prediction corrected for spillage. Errors are statistical only.}
+
 \begin{tabular}{c|ccccc}\hline
                                               &Yields (All)      &Yields ($\mu\mu\mu$)  &Yields ($\mu\mu$e)  &Yields (ee$\mu$)  &Yields (eee)\\
 \hline \hline
@@ -260,6 +265,7 @@ Prediction from Data (19.5 fb$^{-1}$)          & 1.65$\pm$0.51   & 0.37$\pm$0.27
 \hline
 Data - Spillage                               & 1.13$\pm$0.51   & 0.19$\pm$0.27   & 0.11$\pm$0.20   & 0.35$\pm$0.26   & 0.48$\pm$0.29 \\
 \end{tabular}
+\caption{ \label{tab:FRPrediction} Fake Rate prediction corrected for spillage. Errors are statistical only.}
 \end{center}
 \end{sidewaystable}
 
@@ -307,7 +313,7 @@ In data, control region events are required to pass the same mono- and di-lepton
 
 \begin{table}[ht!]
 \begin{center}
-\caption{\small \label{tab:brate} The constituent regions in the rate of b-tags in a 2L sample. An opposite flavor subtraction has been performed to create a more pure sample. Note the discrepancy between data and MC which will contribute to the systematic error on this method.}
+
 \begin{tabular}{c|cc}\hline
                                                          & 4J b-Veto                                & 4J (1Mb + 1Lb)\\
 \hline \hline
@@ -328,6 +334,7 @@ Total from MC                                  & 24672.92$\pm$224.66 & 3057.94$\
 Data (19.5 fb$^{-1}$)                           & 24629.00$\pm$157.53 & 3874.00$\pm$75.54 \\
 \hline
 \end{tabular}
+\caption{ \label{tab:brate} The constituent regions in the rate of b-tags in a 2L sample. An opposite flavor subtraction has been performed to create a more pure sample. Note the discrepancy between data and MC which will contribute to the systematic error on this method.}
 \end{center}
 \end{table}
 		
@@ -337,25 +344,27 @@ Data (19.5 fb$^{-1}$)                           & 24629.00$\pm$157.53 & 3874.00$
 
 \begin{table}[ht!]
 \begin{center}
-\caption{\small \label{tab:wz_z_brateclosure} Comparing the prediction of pure WZ, ZZ, and WWV MC events in a tri-lepton selection with b-tags from b-tag rates in pure Z MC sample.}
+
 \begin{tabular}{c|ccc}\hline
                                                                                                & Predicted            & Observed          & Pred. / Obs.\\
 \hline \hline
 WZ$\rightarrow 3\ell $ , ZZ$\rightarrow 4\ell$ , WWV  &  1.56$\pm$0.14 & 1.19$\pm$0.10 & 1.31$\pm$0.16\\		
 \hline
 \end{tabular}
+\caption{ \label{tab:wz_z_brateclosure} Comparing the prediction of pure WZ, ZZ, and WWV MC events in a tri-lepton selection with b-tags from b-tag rates in pure Z MC sample.}
 \end{center}
 \end{table}
 
 \begin{table}[ht!]
 \begin{center}
-\caption{\small \label{tab:mcsoup_brateclosure} Comparing the prediction of pure WZ, ZZ, and WWV MC events in a tri-lepton selection with b-tags from b-tag rates in a cocktail of MC events in two lepton final state.}
+
 \begin{tabular}{c|ccc}\hline
                                                                                                & Predicted             & Observed          & Pred. / Obs.\\
 \hline \hline
 WZ$\rightarrow 3\ell $ , ZZ$\rightarrow 4\ell $ , WWV & $1.65 \pm 0.14$ & $1.19\pm0.10$ & $1.39 \pm 0.16$ \\
 \hline
 \end{tabular}
+\caption{ \label{tab:mcsoup_brateclosure} Comparing the prediction of pure WZ, ZZ, and WWV MC events in a tri-lepton selection with b-tags from b-tag rates in a cocktail of MC events in two lepton final state.}
 \end{center}
 \end{table}
 
@@ -366,13 +375,14 @@ Based on the closure test results (Tables~\ref{tab:wz_z_brateclosure} and~\ref{t
 		The columns from Table ~\ref{tab:brate} are used to predict the rate of b-tag events. The rate and the b-veto prediction region yields are listed in Table ~\ref{tab:brate_prediction} as well as the prediction.
 \begin{table}[ht!]
 \begin{center}
-\caption{\small \label{tab:brate_prediction} Background predictions in data and MC for processes with b-tags that originate from radiation jets. Errors are statistical only.}
+
 \begin{tabular}{c|ccc}\hline
 	   & Rate of b-tags	& Yields in b-Veto Sideband &	Bkg Prediction \\ \hline
 Data   & 0.16$\pm$0.003	& 20.00$\pm$4.47            & 3.15+/-0.71 \\
 MC	   & 0.12$\pm$0.003	& 14.38$\pm$2.45            & 1.78+/-0.31 \\
 \hline
 \end{tabular}
+\caption{ \label{tab:brate_prediction} Background predictions in data and MC for processes with b-tags that originate from radiation jets. Errors are statistical only.}
 \end{center}
 \end{table}
 

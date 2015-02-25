@@ -2,7 +2,9 @@
 The components of a measurement have been shown. Selections have been determined to identify a \ttZ \ production decaying to three leptons and jets and reduce the selection of background events. Methods for predicting the contributions to the selected events from the backgrounds have been developed. Finally the contribution of systematic uncertainties from the use of Monte Carlo simulations have been assessed. The following chapter applies the already developed selections to a data sample and combines the various pieces of the measurement into a cross section for the \ttZ \ production.\\
 
          \section{Data and Prediction Agreement in Preselection Region}
-         The background prediction methods were developed with a high reliance on MC simulation to determine the behavior of the prediction methods. In the ideal scenario an independent region would be chosen in data to demonstrate the accuracy of the predictions. However, such a scenario is not feasible with the selections used for the \ttZ measurement. The next best option is to relax the selections and show that the predictions work in a looser signal region. Here a preselection is shown to demonstrate the agreement between the full data driven predictions and data. This region is composed of the full signal selections with the jet requirements loosened to two or more jets from the signal selection of four. This is done to be able to preserve the b-tags requirement. What results is a region with almost twice the events of the signal region and slightly enhanced backgrounds, both being useful to help illustrate the agreement of the predictions and data. WZ is a dominant background and thus the reconstructed mass of the Z and the \Mt \ of the W (Fig~\ref{fig:hmass_3L2b}) are good variables for comparison. Additionally, in the preselection region, it is possible to view a more complete picture of the jet multiplicity (Fig~\ref{fig:jetmult_3L2b}) which is important as this is used in the full selection. Finally, other distributions such as the lepton \pt \ are shown (Fig~\ref{fig:hleppt_3L2b}). In the following plots, the irreducible background is taken from pure MC where the events have been scaled by lepton efficiency data to MC scale factors and the similar b-tagging efficiency scale factors. The luminosity is scaled to that of data. For the data driven predictions, the shape is taken from MC while the normalization of the background is from the data driven predictions in Sec~\ref{sec:datadriven}.
+
+         The background prediction methods were developed with a high reliance on MC simulation to determine the behavior of the prediction methods. In the ideal scenario an independent region would be chosen in data to demonstrate the accuracy of the predictions. However, such a scenario is not feasible with the selections used for the \ttZ measurement. The next best option is to relax the selections and show that the predictions work in a looser signal region. Here a preselection is shown to demonstrate the agreement between the full data driven predictions and data. This region is composed of the full signal selections with the jet requirements loosened to two or more jets from the signal selection of four. This is done to be able to preserve the b-tags requirement. What results is a region with almost twice the events of the signal region and slightly enhanced backgrounds, both being useful to help illustrate the agreement of the predictions and data. WZ is a dominant background and thus the reconstructed mass of the Z and the \Mt \ of the W (Fig~\ref{fig:hmass_3L2b}) are good variables for comparison. Additionally, in the preselection region, it is possible to view a more complete picture of the jet multiplicity (Fig~\ref{fig:jetmult_3L2b}) which is important as this is used in the full selection. Finally, other distributions such as the lepton \pt \ are shown in Appendix~\ref{app:figures}. In the following plots, the irreducible background is taken from pure MC where the events have been scaled by lepton efficiency data to MC scale factors and the similar b-tagging efficiency scale factors. The luminosity is scaled to that of data. For the data driven predictions, the shape is taken from MC while the normalization of the background is from the data driven predictions in Sec~\ref{sec:datadriven}.
+
 
 \begin{figure}[h]
 \begin{center}
@@ -23,26 +25,7 @@ Reconstructed mass plots after tri-lepton plus two b-tag selections. Reconstruct
 \end{center}
 \end{figure}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.48\linewidth]{Figs/Plots_PreSelections/hZLep1Pt_3L2b.pdf}
-\includegraphics[width=0.48\linewidth]{Figs/Plots_PreSelections/hZLep2Pt_3L2b.pdf}
-\includegraphics[width=0.48\linewidth]{Figs/Plots_PreSelections/hWLepPt_3L2b.pdf}
-\caption{\label{fig:hleppt_3L2b}
-\pt of the Z and W leptons after tri-lepton plus two b-tag selections. Left: Leading Pt lepton. Right: Trailing \pt lepton. Bottom: W lepton.
-}
-\end{center}
-\end{figure}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.48\linewidth]{Figs/Plots_PreSelections/hZPt_3L2b.pdf}
-%\includegraphics[width=0.48\linewidth]{place_holders/index.png}
-\caption{\label{fig:hzpt_3L2b}
-\pt of the reconstructed Z boson after tri-lepton plus two b-tag selections.
-}
-\end{center}
-\end{figure}
 
 \begin{figure}[h]
 \begin{center}
@@ -55,15 +38,7 @@ Jet Multiplicities. Left: Number of pfJets after tri-lepton plus two b-tag selec
 \end{center}
 \end{figure}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.48\linewidth]{Figs/Plots_PreSelections/hJ1Pt_3L2b.pdf}
-\includegraphics[width=0.48\linewidth]{Figs/Plots_PreSelections/hJ2Pt_3L2b.pdf}
-\caption{\label{fig:JPt_3L2b}
-Jet \pt . Left: \pt of leading jet after tri-lepton plus two b-tag selections. Right: \pt of sub leading jet after tri-lepton plus two b-tag selections.
-}
-\end{center}
-\end{figure}
+
 
 \begin{figure}[h]
 \begin{center}
@@ -87,7 +62,7 @@ Ht (Left) and pfMet (Right) after tri-lepton plus two b-tag selections.
 
 \begin{sidewaystable}[ht!]
 \begin{center}
-\caption{\small \label{tab:yields} Data and pure MC yields after full analysis selections with \intLumi.}
+
 \begin{tabular}{c|ccccc}\hline
 &Yields (All)&Yields ($\mu\mu\mu$)&Yields ($\mu\mu$e)&Yields (ee$\mu$)&Yields (eee)\\
 \hline \hline
@@ -107,6 +82,7 @@ Total Sig+Bkg MC (19.5 fb$^{-1}$) & 10.64$\pm$1.15 & 3.19$\pm$1.10 & 2.81$\pm$1.
 Data (19.5 fb$^{-1}$) & 12.$\pm$3.46 & 3.$\pm$1.73 & 2.$\pm$1.41 & 4.$\pm$2.00 & 3.$\pm$1.73\\
 \hline
 \end{tabular}
+\caption{ \label{tab:yields} Data and pure MC yields after full analysis selections with \intLumi.}
 \end{center}
 \end{sidewaystable}
 
@@ -118,7 +94,7 @@ Compiling the information in the preceding sections, an estimate can be made for
 
 \begin{table}[ht!]
 \begin{center}
-\caption{\small \label{tab:signal_minus_bkg} Data and pure MC yields after full analysis selections with \intLumi.}
+
 \begin{tabular}{c|c}\hline
  & Measurement\\
 \hline \hline
@@ -133,6 +109,7 @@ Total Background Prediction                   &  $-4.38 \pm 0.73_{bkg st} \pm 1.
 Predicted Signal                              &  $7.62 \pm 3.46_{data st} \pm 0.73_{bkg st} \pm 1.37_{bkg sy}$ \\	
 \hline
 \end{tabular}
+\caption{ \label{tab:signal_minus_bkg} Data and pure MC yields after full analysis selections with \intLumi.}
 \end{center}
 \end{table}
 
@@ -249,19 +226,20 @@ The full cross section is given by
  
 \begin{table}[ht!]
 \begin{center}
-\caption{\small \label{tab:significance} Expected and measured significance of the signal.}
+
 \begin{tabular}{c|c}\hline
 	& Significance	 \\ \hline
 Expected	& 2.45	 \\
 Measured	& 2.33	 \\
 \hline
 \end{tabular}
+\caption{ \label{tab:significance} Expected and measured significance of the signal.}
 \end{center}
 \end{table}
  
 \begin{table}[ht!]
 \begin{center}
-\caption{\small \label{tab:landsout} Measured cross section as calculated by LandS.}
+
 \begin{tabular}{c|cc}\hline
 	& r        & Cross Section	 \\ \hline
 	&  & \\
@@ -269,6 +247,7 @@ Measured	& 2.33	 \\
 & & \\
 \hline
 \end{tabular}
+\caption{ \label{tab:landsout} Measured cross section as calculated by LandS.}
 \end{center}
 \end{table}
  
@@ -366,4 +345,3 @@ with a significance of 3.7 standard deviations.
 %
 
  
-	
