@@ -6,6 +6,9 @@
 Table~\ref{tab:IrreducibleMCSamples} contains a list of Monte Carlo samples contributing to the SM background from rare processes that is taken from simulation.  The cross section and equivalent luminosity of each sample is also provided. \ttZ \ is included in this table as it is used in the spillage subtraction in the fake rate.
 
 \begin{sidewaystable}[H]
+\caption{\label{tab:App:IrreducibleMCSamples} MC datasets corresponding to contributions not covered by the data-driven methods.
+Predicted yields from the SM samples listed here are used directly in the analysis. 
+The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7X-v1 is replaced with a shorthand Su12 V7X. All datasets are in the AODSIM data tier.}
 \begin{center}
 \begin{tabular}{lcc}
 \hline\hline
@@ -19,15 +22,15 @@ Name														           & Cross section, pb & Luminosity, \fbinv \\ \hline
 \verb=/ZZZNoGstarJets_8TeV-madgraph/Su12 V7A=                                                 & 0.004587          &     40692.6          \\ 
 \hline\hline
 \end{tabular}
-\caption{\label{tab:App:IrreducibleMCSamples} MC datasets corresponding to contributions not covered by the data-driven methods.
-Predicted yields from the SM samples listed here are used directly in the analysis. 
-The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7X-v1 is replaced with a shorthand Su12 V7X. All datasets are in the AODSIM data tier.}
 \end{center}
 \end{sidewaystable}
 
 \clearpage
 
 \begin{sidewaystable}[H]
+\caption{\label{tab:App:frEstimatedMCSamples} MC datasets that do not contribute to MC Pred.  The contribution to the background from these processes is covered by data-driven methods, but expected yields based on simulation are nevertheless provided as a reference.
+Predicted yields from the SM samples listed here are used directly in the analysis. 
+The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is replaced with a shorthand Su12 V7A. All datasets are in the AODSIM data tier.}
 \begin{center}
 \begin{tabular}{lcc}
 \hline\hline
@@ -47,9 +50,6 @@ Name                                                                            
 \verb=/ZZJetsTo2L2Q_TuneZ2star_8TeV-madgraph-tauola/Su 12 V7A=      &     2.4487          &        790.921          \\
 \hline\hline
 \end{tabular}
-\caption{\label{tab:App:frEstimatedMCSamples} MC datasets that do not contribute to MC Pred.  The contribution to the background from these processes is covered by data-driven methods, but expected yields based on simulation are nevertheless provided as a reference.
-Predicted yields from the SM samples listed here are used directly in the analysis. 
-The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is replaced with a shorthand Su12 V7A. All datasets are in the AODSIM data tier.}
 \end{center}
 \end{sidewaystable}
 
@@ -57,6 +57,8 @@ The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is re
 
 
 \begin{sidewaystable}[H]
+\caption{\label{tab:App:frQCDMCSamples} MC datasets that are used in calculated the Fake Rate used in the closure tests for the purpose of determining the systematic uncertainty on the method as well as correcting the central value of the prediction. 
+The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is replaced with a shorthand Su12 V7A. All datasets are in the AODSIM data tier.}
 \begin{center}
 \begin{tabular}{l}
 \hline\hline
@@ -77,8 +79,6 @@ Name                                                                            
 \verb=/QCD_Pt-170to300_TuneZ2star_8TeV_pythia6/Su 12 V7A-v2=                        \\
 \hline\hline
 \end{tabular}
-\caption{\label{tab:App:frQCDMCSamples} MC datasets that are used in calculated the Fake Rate used in the closure tests for the purpose of determining the systematic uncertainty on the method as well as correcting the central value of the prediction. 
-The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is replaced with a shorthand Su12 V7A. All datasets are in the AODSIM data tier.}
 \end{center}
 \end{sidewaystable}
 \clearpage
@@ -88,6 +88,9 @@ The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is re
 
 Table ~\ref{tab:bEstimatedMCSamples} contains a list of Monte Carlo samples that are used for reference for the theoretical contributions of the processes estimated from the method that predicts he contribution of events that have b-tags from radiation.
 \begin{sidewaystable}[H]
+\caption{\label{tab:App:bEstimatedMCSamples} MC datasets that do not contribute to MC Pred.  The contribution to the background from these processes is covered by data-driven methods (b-tag estimation from radian jets), but expected yields based on simulation are nevertheless provided as a reference.
+Predicted yields from the SM samples listed here are used directly in the analysis. 
+The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is replaced with a shorthand Su12 V7A. All datasets are in the AODSIM data tier.}
 \begin{center}
 \begin{tabular}{lcc}
 \hline\hline
@@ -99,9 +102,6 @@ Name                                                                            
 \verb=/WWZNoGstarJets_8TeV-madgraph/Su12 V7A=                                              & 0.0633            &        3832.94        \\ 
 \hline\hline
 \end{tabular}
-\caption{\label{tab:App:bEstimatedMCSamples} MC datasets that do not contribute to MC Pred.  The contribution to the background from these processes is covered by data-driven methods (b-tag estimation from radian jets), but expected yields based on simulation are nevertheless provided as a reference.
-Predicted yields from the SM samples listed here are used directly in the analysis. 
-The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is replaced with a shorthand Su12 V7A. All datasets are in the AODSIM data tier.}
 \end{center}
 \end{sidewaystable}
 
@@ -109,6 +109,7 @@ The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is re
 
 
 \begin{sidewaystable}[H]
+\caption{\label{tab:App:bRateComparison} MC datasets used to validate the b-tag content in a di-lepton and tril-lepton sample against each other as a demonstration of the validity of the method used to predict contribution to the background via b-tags that come from radiation. Note that the DY sample differs from that used in the rest of the analysis. This one was specifically chosen because it treats the b-quark's mass the same as in the used WZ sample. The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is replaced with a shorthand Su12 V7A. All datasets are in the AODSIM data tier.}
 \begin{center}
 \begin{tabular}{lcc}
 \hline\hline
@@ -117,12 +118,12 @@ Name                                                                            
 \verb=/WZJetsTo3LNu_TuneZ2_8TeV-madgraph-tauola/Su 12 V7A=      &        1.0575       &              1908.25    \\
 \hline\hline
 \end{tabular}
-\caption{\label{tab:App:bRateComparison} MC datasets used to validate the b-tag content in a di-lepton and tril-lepton sample against each other as a demonstration of the validity of the method used to predict contribution to the background via b-tags that come from radiation. Note that the DY sample differs from that used in the rest of the analysis. This one was specifically chosen because it treats the b-quark's mass the same as in the used WZ sample. The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is replaced with a shorthand Su12 V7A. All datasets are in the AODSIM data tier.}
 \end{center}
 \end{sidewaystable}
 
 
 \begin{sidewaystable}[H]
+\caption{\label{tab:App:ttZGeneratorMCs} MC datasets used to determine the signal systematic uncertainty due to the type of generator used. They are both normalized to the same cross section. Madgraph is an LO generator while aMC@NLO is an NLO generator. The madgraph sample is the same as the one listed in table~\ref{tab:IrreducibleMCSamples}. The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is replaced with a shorthand Su12 V7A. All datasets are in the AODSIM data tier.}
 \begin{center}
 \begin{tabular}{lcc}
 \hline\hline
@@ -131,7 +132,6 @@ Name                                                                            
 \verb=/ttbarZ_8TeV-Madspin_aMCatNLO-herwig/Su 12 V19=                    &        0.2057       &                  \\
 \hline\hline
 \end{tabular}
-\caption{\label{tab:App:ttZGeneratorMCs} MC datasets used to determine the signal systematic uncertainty due to the type of generator used. They are both normalized to the same cross section. Madgraph is an LO generator while aMC@NLO is an NLO generator. The madgraph sample is the same as the one listed in table~\ref{tab:IrreducibleMCSamples}. The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is replaced with a shorthand Su12 V7A. All datasets are in the AODSIM data tier.}
 \end{center}
 \end{sidewaystable}
 

@@ -1,6 +1,6 @@
 \chapter{Event Selections}
 \label{ch:EventSelections}
-As explained in Sections~\ref{ch:intro},~\ref{ch:LHC}, and~\ref{ch:particle_reconstruction}, the CMS experiment is a general purpose experiment designed to measure trajectory, momentum, energy, and charge of particles produced in a collision. The collision rate and particle production rate is at an unusably high level for one to look at every event. This is fine because only some events will be interesting. The triggering methods reduces this rate to a level that can be written to storage media. Then these events are processed and put into a dataset. Still, many more events must be removed by a physicist from the dataset in order to only save events germane to a particular measurement. These events are filtered with a ``cut" to remove events that do not match the desired signature (for example in a di-lepton search, events without 2 leptons or more are rejected). Further cuts are applied to ensure a particular quality of the reconstructed objects (for example a cut on the impact parameter of a lepton to help remove fake leptons) to remove false positives. Further selections are also applied to reduce background events that may appear like the signal events. The stringency of the cuts must be carefully balanced to remove as much of the background as possible while maintaining as much of the signal as possible. The following sections describe the cuts and selections to identify \ttZ events and measure their cross section.\\
+As explained in Chapters~\ref{ch:intro},~\ref{ch:LHC}, and~\ref{ch:particle_reconstruction}, the CMS experiment is a general purpose experiment designed to measure trajectory, momentum, energy, and charge of particles produced in a collision. The collision rate and particle production rate is at an unusably high level for one to look at every event. This is fine because only some events will be interesting. The triggering methods reduces this rate to a level that can be written to storage media. Then these events are processed and put into a dataset. Still, many more events must be removed by a physicist from the dataset in order to only save events germane to a particular measurement. These events are filtered with a ``cut" to remove events that do not match the desired signature (for example in a di-lepton search, events without 2 leptons or more are rejected). Further cuts are applied to ensure a particular quality of the reconstructed objects (for example a cut on the impact parameter of a lepton to help remove fake leptons) to remove false positives. Further selections are also applied to reduce background events that may appear like the signal events. The stringency of the cuts must be carefully balanced to remove as much of the background as possible while maintaining as much of the signal as possible. The following sections describe the cuts and selections to identify \ttZ events and measure their cross section.\\
 
 \section{Triggers for Data Acquisition}
 \label{sec:Triggers}
@@ -9,6 +9,7 @@ As the desired final state contains three isolated leptons (electrons or muons),
 Thus a variety of triggers were chosen that require two or more leptons (double lepton triggers). Triggers that require one or more lepton or that require three or more leptons were rejected as they would not match the triggers used to estimate the Fake Rate. The double lepton triggers are assumed to be 100\% efficient. The efficiency to trigger on one lepton is very high, and thus with three leptons, the odds that at least two of them will pass is approximately 100\%. A small systematic uncertainty is added to account for any potential inefficiency (see Sec~\ref{sec:trigger_syst}).
 	
 \begin{table}[h]
+\caption{\label{tab:AnalysisTriggers} Triggers used while measuring the yields in data for the main analysis selections. In the trigger name the ``v" at the end of the line stands for a number of versions that change while data is being collected.}
 \begin{center}
 \begin{tabular}{l|l} \hline \hline
 Lepton Type & Trigger  \\ \hline
@@ -20,7 +21,7 @@ $\mu$e          & \verb=HLT_Mu17_Ele8_CaloIdT_CaloIsoVL_TrkIdVL_TrkIsoVL_v= \\
 $\mu$e          & \verb=HLT_Mu8_Ele17_CaloIdT_CaloIsoVL_TrkIdVL_TrkIsoVL_v= \\
 \hline
 \end{tabular}
-\caption{\label{tab:AnalysisTriggers} Triggers used while measuring the yields in data for the main analysis selections. In the trigger name the ``v" at the end of the line stands for a number of versions that change while data is being collected.}
+
 \end{center}
 \end{table}
 
@@ -133,7 +134,7 @@ The $\Delta\beta$ correction is determined from the sum \pt\ of charged hadrons 
 The isolation is required to be less than 0.1 of the \pt.
 
 
-\section{Selecting the Z-boson Lepton Pair and the 3rd Lepton}
+\section{Selecting the Z-boson Leptons and the 3rd Lepton}
 \label{sec:3LepSelection}
 All three selected leptons must pass the Identification and Isolation requirements as well as \pt and $\eta$ requirements listed in Secs~\ref{sec:ElectronSelections} and~\ref{sec:MuonSelections}. Furthermore, two of the leptons are required to be consistent with a reconstructed Z boson. This includes:
 \begin{itemize}
@@ -179,6 +180,7 @@ These predictions are made with the assumption that no new systematic uncertanti
 As the window gets narrower beyond $\pm 10$ \GeV, the difference in scaling of the yields in Table ~\ref{tab:zmass_massscaling} becomes significant at approximately a difference of 4-5\%. These narrower mass windows would lead to challenges in estimating the systematic uncertainty introduced by the mass window as well as reduce the significance of that mass window. To avoid this extra difficulty, the $\pm 10$ \GeV \ window is chosen.\\
 
 \begin{table}[ht!]
+\caption{ \label{tab:zmass_errorsig} Expected signficance and estimated \% error on the cross section by varying the Z mass window. Significance and error estimates are determined with full analysis selections and background estimates in conjunction with the \ttZ \ signal Monte Carlo.}
 
 \begin{center}
 \begin{tabular}{c|ccc}\hline
@@ -193,7 +195,6 @@ $\pm 5$              &  2.51                   &  +51\%    &  -43\%             
 $\pm 2.5$            &  2.21                   &  +60\%    &  -49\%                                      \\
 \hline
 \end{tabular}
-\caption{ \label{tab:zmass_errorsig} Expected signficance and estimated \% error on the cross section by varying the Z mass window. Significance and error estimates are determined with full analysis selections and background estimates in conjunction with the \ttZ \ signal Monte Carlo.}
 \end{center}
 \end{table}
 
@@ -218,6 +219,7 @@ $\pm 2.5$            &  2.21                   &  +60\%    &  -49\%             
 
 
 \begin{sidewaystable}[ht!]
+\caption{\label{tab:zmass_massscaling} Scaling of yields in high statistics Z selection with Z mass window. The ``2 Lepton Data'' columns are important numbers in the calculation of the rate of b-tags and are used here because they are a high statistics selection of a Z boson. Statistical errors on the absolute yields in the \ttZ MC \ are between 5 and 6\%. Statistical errors on the DY MC are negligable while statistical errors on the 2 Lepton Data selection are between 0.5\% and 2\% where the DY MC with b-veto is clustered at the low end.}
 \begin{center}
 \begin{tabular}{c|ccccc}\hline
 Mass Window (\GeV)  & \ttZ \ MC   & 2 Lepton DY MC  & 2 Lepton Data  & 2 Lepton DY MC  & 2 Lepton Data  \\
@@ -232,6 +234,6 @@ $\pm 2.5$           &  65.3\%     &  61.5\%         & 56.8\%         & 60.9\%   
 
 \hline
 \end{tabular}
-\caption{\label{tab:zmass_massscaling} Scaling of yields in high statistics Z selection with Z mass window. The ``2 Lepton Data'' columns are important numbers in the calculation of the rate of b-tags and are used here because they are a high statistics selection of a Z boson. Statistical errors on the absolute yields in the \ttZ MC \ are between 5 and 6\%. Statistical errors on the DY MC are negligable while statistical errors on the 2 Lepton Data selection are between 0.5\% and 2\% where the DY MC with b-veto is clustered at the low end.}
+
 \end{center}
 \end{sidewaystable}

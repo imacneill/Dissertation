@@ -1,4 +1,4 @@
-\chapter{Other Uncertainties Due to Use of Simulations}
+%\chapter{Other Uncertainties Due to Use of Simulations}
 \section{Uncertainties  Involved in Event Generation}
 The previous chapter was concerned with uncertainties due to reconstructed and identified quantities in the MC simulations. The following chapter will discuss uncertainties in the simulation at a lower level, at the level of event generation. These can come from the parton distribution functions used, masses used for particles, or the order to which calculations are performed.\\ 
 
@@ -34,17 +34,18 @@ where $A_0$ is from the central value PDF.\\
 The NNPDF samples of PDF+$\alpha _s$ is obtained by using NNPDF sets with different fixed $\alpha _s$ corresponding to a Gaussian sample around the nominal $\alpha _s = 0.119$ as shown in Table~\ref{tab:nnPDFsets}.
  
 \begin{table}[h]
+\caption{\label{tab:nnPDFsets} Number of NNPDF replicas for each $\alpha _s$.}
 \begin{center}
-
 \begin{tabular}{c|ccccccc}\hline
 $\alpha _s$         &  0.116 & 0.117 & 0.118 & 0.119 & 0.120 & 0.121 & 0.122 \\ \hline
 $N_{rep}$                &  5         &  27      &  72      &   100   &  72     &   27    &    5       \\
 \hline
 \end{tabular}
-\caption{\label{tab:nnPDFsets} Number of NNPDF replicas for each $\alpha _s$.}
 \end{center}
 \end{table}
+
 The uncertainty is computed using the following equations:
+
 \begin{equation}
 \Delta A ^{+} = \sqrt{  \frac{1}{N^{+} - 1} \sum \limits_{i=1}^{N^{+}} (A_i - A_0)^2},
 \end{equation}
@@ -55,6 +56,7 @@ with $A_0$ computed front he central value PDF at $\alpha = 0.119$, i running ov
 
 \subsubsection{Combined Results}
 To combine the measurements into one error, the uncertainty is computed with the following equations:
+
 \begin{equation}
 \Delta _{\max} = \underset{i}{\max}  [A_i + \Delta A^{+} _i],
 \end{equation}
@@ -75,8 +77,8 @@ Using this procedure, yields an uncertainty of 1.5\%.
 A number of uncertainties are measured by varying parameters in top samples. Ideally, these parameters should be varied in a \ttZ \ sample, but since none were produced centrally by CMS, already existing \ttbar samples were used with analogous cuts to the \ttZ \ analysis. that is one lepton was selected, two b-tagged jets, and an additional two jets. These samples are listed in Table~\ref{tab:sampleupdown}.
 
 \begin{table}[h]
+\caption{\label{tab:sampleupdown} List of alternate \ttbar \ samples scaling up or down relative parameters to the systematics. Summer12\textunderscore DR53X-PU\textunderscore S10\textunderscore START53\textunderscore V7A-v1 is replaced by SU12 for brevity.}
 \begin{center}
-
 \begin{tabular}{l}\hline
 Sample   \\ \hline
  \verb=/TTJets_mass178_5_TuneZ2star_8TeV-madgraph-tauola/SU12/AODSIM=   \\
@@ -87,11 +89,10 @@ Sample   \\ \hline
  \verb=/TTJets_matchingdown_TuneZ2star_8TeV-madgraph-tauola/SU12/AODSIM=  \\
 \hline
 \end{tabular}
-\caption{\label{tab:sampleupdown} List of alternate \ttbar \ samples scaling up or down relative parameters to the systematics. SU12 stands for ``Summer12\_DR53X-PU\_S10\_START53\_V7A-v1."}
 \end{center}
 \end{table}
 
-In order to use the \ttbar \ samples, the full analysis selections must be modified to become a mono-lepton selection instead of a tri-lepton selection, so that only prompt leptons are considered and the jet production methods remain the same. In essence this just removes the Z selection. There is an additional benefit from this modified selection in that it creates a high statistics region to derive the systematic errors. The number of events passing the modified selections in each sample are compared to the number of generator level events with 1 lepton. The /TTJets\_SemiLeptMGDecays\_8TeV-madgraph/Su12\_V7A\_ext-v1/AODSIM  (where Su12 stands for ``Summer12\_DR53X-PU\_S10\_START53'') sample is used to produce a central value, and the fraction passing from the varied samples is compared to the fraction passing from the central value to determine the systematic error on each variation. The results are summarized in Table ~\ref{tab:systupdown}.
+In order to use the \ttbar \ samples, the full analysis selections must be modified to become a mono-lepton selection instead of a tri-lepton selection, so that only prompt leptons are considered and the jet production methods remain the same. In essence this just removes the Z selection. There is an additional benefit from this modified selection in that it creates a high statistics region to derive the systematic errors. The number of events passing the modified selections in each sample are compared to the number of generator level events with 1 lepton. The /TTJets\_SemiLeptMGDecays\_8TeV-madgraph/Su12\_V7A\_ext-v1/AODSIM  (where Su12 stands for Summer12\_DR53X-PU\_S10\_START53) sample is used to produce a central value, and the fraction passing from the varied samples is compared to the fraction passing from the central value to determine the systematic error on each variation. The results are summarized in Table ~\ref{tab:systupdown}.
 
 \subsubsection{Uncertainties Due to Parton Momentum Transfer}
 Proton structures can be probed with electrons and the inelastic scattering follows a scaling known as Bjorken scaling. This scaling depends on the momentum transfer produced by the photon force carrier in the interaction. This momentum is in the form of a 4-vector and included in the scaling as a quadratic (written as Q$^2$).\\
@@ -105,8 +106,8 @@ Matching is a process that occurs between the Matrix Element simulation of the u
 
 
 \begin{table}[h]
+\caption{\label{tab:systupdown} Summary of systematic b-Tag uncertainties split by light flavor and b contributions. Note: Half the error established by varying the top mass is used because the mass range is much wider than the current considered error on the top mass measurement.}
 \begin{center}
-
 \begin{tabular}{lccc}\hline
 Source                  &  N Pass / N Gen & \% Deviation from Central & Notes\\ \hline
 Central                 & 0.265 & & \\
@@ -121,7 +122,6 @@ Total                     &             & 3.3\% & Used half of\\
                               &             &             & Mass variation \\
 \hline
 \end{tabular}
-\caption{\label{tab:systupdown} Summary of systematic b-Tag uncertainties split by light flavor and b contributions. Note: Half the error established by varying the top mass is used because the mass range is much wider than the current considered error on the top mass measurement.}
 \end{center}
 \end{table}
 
@@ -163,14 +163,13 @@ Then the difference is defined as
 and the results are summarized in Table~\ref{tab:systgeneratorsum}
 
 \begin{table}[h]
+\caption{\label{tab:systgeneratorsum} Summary of the efficiencies using the Madgraph and aMC@NLO event generators for the jet selections.}
 \begin{center}
-
 \begin{tabular}{ccc}\hline
 Madgraph           &  aMC@NLO & Difference \\ \hline
 0.38                      & 0.36              & 5\%\\
 \hline
 \end{tabular}
-\caption{\label{tab:systgeneratorsum} Summary of the efficiencies of jet selection in Madgraph and aMC@NLO.}
 \end{center}
 \end{table}
 
@@ -193,8 +192,8 @@ where $\pt ^{gen}$ is the transverse momentum of the matched generator jet, and 
 \end{itemize}
 
 \begin{table}[h]
+\caption{ \label{tab:jer_scalefactor} data/MC scale factors used in determining the Jet Energy Resolution.}
 \begin{center}
-
 \begin{tabular}{c|c}\hline
 Jet Pseudorapidity & Scale Factor \\ \hline \hline
 0.0 - 0.5 & 1.052 \\
@@ -205,7 +204,6 @@ Jet Pseudorapidity & Scale Factor \\ \hline \hline
 \hline
 \hline
 \end{tabular}
-\caption{ \label{tab:jer_scalefactor} data/MC scale factors used in determining the Jet Energy Resolution.}
 \end{center}
 \end{table}
 
@@ -215,8 +213,8 @@ To determine the systematic uncertainty on this procedure, up and down variation
 \end{equation}
 
 \begin{table}[h]
+\caption{ \label{tab:jer_scalefactor_updown} data/MC up/down scale factors used in determining the systematic uncertainty on Jet Energy Resolution.}
 \begin{center}
-
 \begin{tabular}{c|c|c}\hline
 Jet Pseudorapidity & Scale Factor (UP) & Scale Factor (DOWN)\\ \hline \hline
 0.0 - 0.5 & 1.115 & 0.990 \\
@@ -227,7 +225,6 @@ Jet Pseudorapidity & Scale Factor (UP) & Scale Factor (DOWN)\\ \hline \hline
 \hline
 \hline
 \end{tabular}
-\caption{ \label{tab:jer_scalefactor_updown} data/MC up/down scale factors used in determining the systematic uncertainty on Jet Energy Resolution.}
 \end{center}
 \end{table}
 

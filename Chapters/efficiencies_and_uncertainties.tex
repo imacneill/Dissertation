@@ -6,8 +6,10 @@ Systematic uncertainties on signal event selections arise from differences betwe
 A summary of systematic uncertainties is given in Table~\ref{tab:systSumm}. Full descriptions of each systematic are presented in the following sub-sections.
 
 \begin{table}[h]
+\caption{\label{tab:systSumm}Summary of systematic uncertainties on the signal selection and
+expectation. 
+Reported values are fractional, relative to the total cross section.}
 \begin{center}
-
 \begin{tabular}{lcccc}\hline
 Source 					& Method & Total Systematic 	\\ \hline
 Jet Energy Scale			& Momentum Scale Up/Down                        & 4.8\%	\\
@@ -28,9 +30,6 @@ and Event Composition  & & \\
 Total 					                                                                             & & 10.5\% 	\\
 \hline
 \end{tabular}
-\caption{\label{tab:systSumm}Summary of systematic uncertainties on the signal selection and
-expectation. 
-Reported values are fractional, relative to the total cross section.}
 \end{center}
 \end{table}
 
@@ -47,8 +46,8 @@ For electrons, the tag is required to be matched to the \verb=HLT_Ele27_WP80= tr
 The identification efficiency is measured with the probe electron additionally passing the isolation requirements described in Sec~\ref{sec:ElectronSelections} but not the identification requirements. The derived efficiency is directly applicable to the leptons in the full tri-lepton analysis as identification requirements are a property of the lepton alone. The isolation efficiency, however, is dependent on the energy (mainly energy from hadronic activity) in the event. As such, both the electron identification and an additional jet selection is required matching those described in Sec~\ref{sec:JetSelection}. The overall electron efficiency may be measured by relaxing the probe electron to the nominal value. The electron efficiencies are summarized in Table~\ref{tab:eleffiency}. A simultaneous fit is performed on the di-lepton data in the invariant mass range of $60-120 \ \GeV$ using models from Table~\ref{tab:tnpmodels} selected for performance on a bin-by-bin basis. This becomes necessary as the kinematics varies with \pt \ and \aeta \ bins and fitting models must be chosen for best results.\\
 
 \begin{table}[h]
+\caption{\label{tab:tnpmodels} Models used for fitting the signal or the background contribution in the tag and probe method.}
 \begin{center}
-
 \begin{tabular}{l|c}\hline
  Model                                                                               & Usage \\ \hline \hline
  Breit-Wigner function $\star$ Crystal-Ball function & Signal \\
@@ -59,13 +58,12 @@ The identification efficiency is measured with the probe electron additionally p
  Polynomial $\times$ Exponential function               & Background \\
  Chebyshev Polynomial                                               & Background \\
 \end{tabular}
-\caption{\label{tab:tnpmodels} Models used for fitting the signal or the background contribution in the tag and probe method.}
 \end{center}
 \end{table}
 
 \begin{sidewaystable}[h]
+\caption{ \label{tab:eleffiency} Measured electron efficiency ratios using the tag and probe method. Errors are statistical only.}
 \begin{center}
-
 \begin{tabular}{c|c|c|c|c|c} \hline \hline
 \pt - $|\eta|$   &                 &20 - 30 \GeV & 30 - 40 \GeV & 40 - 50 \GeV & 50 - 200 \GeV \\ \hline
 %                        & MC          &  &  & \\
@@ -81,15 +79,14 @@ The identification efficiency is measured with the probe electron additionally p
 %                         & Data       & & & \\
 2.0 - 2.4          & Data/MC & 0.994 +/- 0.006 & 0.980 +/- 0.003 & 0.982 +/- 0.002 & 0.978 +/- 0.004 \\ \hline \hline
 \end{tabular}
-\caption{ \label{tab:eleffiency} Measured electron efficiency ratios using the tag and probe method. Errors are statistical only.}
 \end{center}
 \end{sidewaystable}
 
 Muon identification and isolation requirement efficiencies are measured using the same methods as with the electrons. Appropriate muon specific identification and isolation requirements as described in Sec~\ref{sec:MuonSelections} are used instead of the electron specific ones above.\\
 
 \begin{sidewaystable}[h]
+\caption{ \label{tab:mueffiency} Measured muon efficiency ratios using the tag and probe method. Errors are statistical only.}
 \begin{center}
-
 \begin{tabular}{c|c|c|c|c|c} \hline \hline
 \pt - $|\eta|$ &                 &20 - 30 \GeV & 30 - 40 \GeV & 40 - 50 \GeV & 50 - 200 \GeV \\ \hline
 %                      & MC          &  &  & \\
@@ -99,7 +96,6 @@ Muon identification and isolation requirement efficiencies are measured using th
 %                      & Data       & & & \\
 1.20 - 2.50   & Data/MC & 0.974 +/- 0.002 & 0.978 +/- 0.001 & 0.984 +/- 0.000 & 0.978 +/- 0.001 \\ \hline \hline
 \end{tabular}
-\caption{ \label{tab:mueffiency} Measured muon efficiency ratios using the tag and probe method. Errors are statistical only.}
 \end{center}
 \end{sidewaystable}
 
@@ -127,8 +123,8 @@ The discriminant is reshaped based on Data/MC scale factors measured in~\cite{BT
 
 
 \begin{table}[h]
+\caption{\label{tab:systbTag} Summary of systematic b-tag uncertainties split by light flavor and b contributions.}
 \begin{center}
-
 \begin{tabular}{lc}\hline
 Source & Total Systematic \\ \hline
 b Quarks & 2.9\% \\
@@ -136,7 +132,6 @@ Light Flavor Quarks & 1.0\% \\ \hline
 Total & 3.1\% \\
 \hline
 \end{tabular}
-\caption{\label{tab:systbTag} Summary of systematic b-tag uncertainties split by light flavor and b contributions.}
 \end{center}
 \end{table}
 

@@ -1,4 +1,4 @@
-\chapter{Sources of Real and Simulated Collsions}
+\chapter{Real and Simulated Collision Sources}
 \label{ch:samples}
 This document presents results obtained from data of proton-proton collisions at 8 TeV center of mass energy. A total luminosity of \intLumi \ is used, which corresponds to the totality of data to be measured at this center of mass energy at the LHC. The data was collected by the CMS detector through the end of 2012. This analysis relies on a mixture of data driven methods and MC simulation to estimate backgrounds. Additionally, signal events are generated for use in this analysis. The following section discusses the sources and luminosity of the various data sets from various data taking sessions as well as the many Monte Carlo simulation samples used to help investigate the relevant processes and estimate backgrounds.\\
 
@@ -69,6 +69,7 @@ Signal events are selected from the datasets and luminosity totals listed in Tab
 
 
 \begin{table}[hbt]
+\caption{\label{tab:DilDsets_lumi}Datasets and run ranges used in combination which contain signal events.}
 \begin{center}
 \begin{tabular}{lc}\hline\hline
 Name		 & Luminosity ($fb^{-1}$) \\ \hline
@@ -111,7 +112,7 @@ Name		 & Luminosity ($fb^{-1}$) \\ \hline
 
  \hline\hline
 \end{tabular}
-\caption{\label{tab:DilDsets_lumi}Datasets and run ranges used in combination which contain signal events.}
+
 \end{center}
 \end{table}
 
@@ -123,6 +124,7 @@ Name		 & Luminosity ($fb^{-1}$) \\ \hline
 
 
 \begin{table}[hbt]
+\caption{\label{tab:FRDsets}Datasets and run ranges used in combination to measure the lepton fake rates.}
 \begin{center}
 \begin{tabular}{lc}\hline\hline
 Name		& Run Range \\ \hline
@@ -150,7 +152,7 @@ Name		& Run Range \\ \hline
 \verb=/SingleMu/Run2012D-PromptReco-v1/AOD=                                  &  203768 - 208913   \\
  \hline\hline
 \end{tabular}
-\caption{\label{tab:FRDsets}Datasets and run ranges used in combination to measure the lepton fake rates.}
+
 \end{center}
 \end{table}
 
@@ -177,6 +179,10 @@ All cross sections used in normalization are Next to Leading Order (NLO) when av
 Table~\ref{tab:IrreducibleMCSamples} contains a list of Monte Carlo samples contributing to the SM background from rare processes that is taken from simulation.  The cross section and equivalent luminosity of each sample is also provided. \ttZ \ is included in this table as it is used in the spillage subtraction in the fake rate. Table~\ref{tab:frEstimatedMCSamples} are used to help understand the behavior of the data derived fake rate. Additionally Table~\ref{tab:bEstimatedMCSamples} contains a list of Monte Carlo samples that are used for reference only to help gain insight into  the estimates from the method that predicts the contribution of events that have b-tags from radiation. Finally, more samples used for various studies may be found in Appendix~\ref{sec:mc_details}.\\
 
 \begin{sidewaystable}[H]
+\caption{\label{tab:IrreducibleMCSamples} MC datasets corresponding to contributions not covered by the data-driven methods.
+Predicted yields from the SM samples listed here are used directly in the analysis. 
+The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7X-v1 is replaced with a shorthand Su12 V7X. 
+All datasets are in the AODSIM data tier.}
 \begin{center}
 \begin{tabular}{lcc}
 \hline\hline
@@ -190,16 +196,17 @@ Name														           & Cross section, pb & Luminosity, \fbinv \\ \hline
 \verb=/ZZZNoGstarJets_8TeV-madgraph/Su12 V7A=                                                 & 0.004587          &     40692.6          \\ 
 \hline\hline
 \end{tabular}
-\caption{\label{tab:IrreducibleMCSamples} MC datasets corresponding to contributions not covered by the data-driven methods.
-Predicted yields from the SM samples listed here are used directly in the analysis. 
-The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7X-v1 is replaced with a shorthand Su12 V7X. 
-All datasets are in the AODSIM data tier.}
+
 \end{center}
 \end{sidewaystable}
 
 
 
 \begin{sidewaystable}[H]
+\caption{\label{tab:frEstimatedMCSamples} MC datasets that do not contribute to MC Pred.  The contribution to the background from these processes is covered by data-driven methods, but expected yields based on simulation are nevertheless provided as a reference.
+Predicted yields from the SM samples listed here are used directly in the analysis. 
+The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is replaced with a shorthand Su12 V7A. 
+All datasets are in the AODSIM data tier.}
 \begin{center}
 \begin{tabular}{lcc}
 \hline\hline
@@ -219,10 +226,7 @@ Name                                                                            
 \verb=/ZZJetsTo2L2Q_TuneZ2star_8TeV-madgraph-tauola/Su 12 V7A=      &     2.4487          &        790.921          \\
 \hline\hline
 \end{tabular}
-\caption{\label{tab:frEstimatedMCSamples} MC datasets that do not contribute to MC Pred.  The contribution to the background from these processes is covered by data-driven methods, but expected yields based on simulation are nevertheless provided as a reference.
-Predicted yields from the SM samples listed here are used directly in the analysis. 
-The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is replaced with a shorthand Su12 V7A. 
-All datasets are in the AODSIM data tier.}
+
 \end{center}
 \end{sidewaystable}
 
@@ -261,6 +265,10 @@ All datasets are in the AODSIM data tier.}
 
 
 \begin{sidewaystable}[H]
+\caption{\label{tab:bEstimatedMCSamples} MC datasets that do not contribute to MC Pred.  The contribution to the background from these processes is covered by data-driven methods (b-tag estimation from radian jets), but expected yields based on simulation are nevertheless provided as a reference.
+Predicted yields from the SM samples listed here are used directly in the analysis. 
+The common part of each dataset name Summer12\textunderscore DR53X-PU\textunderscore S10\textunderscore START53\textunderscore V7A is replaced with a shorthand Su12 V7A. 
+All datasets are in the AODSIM data tier.}
 \begin{center}
 \begin{tabular}{lcc}
 \hline\hline
@@ -272,10 +280,7 @@ Name                                                                            
 \verb=/WWZNoGstarJets_8TeV-madgraph/Su12 V7A=                                              & 0.0633            &        3832.94        \\ 
 \hline\hline
 \end{tabular}
-\caption{\label{tab:bEstimatedMCSamples} MC datasets that do not contribute to MC Pred.  The contribution to the background from these processes is covered by data-driven methods (b-tag estimation from radian jets), but expected yields based on simulation are nevertheless provided as a reference.
-Predicted yields from the SM samples listed here are used directly in the analysis. 
-The common part of each dataset name Summer12\_DR53X-PU\_S10\_START53\_V7A is replaced with a shorthand Su12 V7A. 
-All datasets are in the AODSIM data tier.}
+
 \end{center}
 \end{sidewaystable}
 

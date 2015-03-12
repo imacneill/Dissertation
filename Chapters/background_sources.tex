@@ -1,10 +1,11 @@
 	\section{Backgrounds}
 	\label{sec:background_sources}
-	
+	A background is any type of event that will pass the signal selection yet be produced by some mechanism or particle decay that is not the desired source of the signal. Usually backgrounds are categorized by common characteristics so that they may be better estimated and subtracted from the measured number of events. For the \ttZ cross section measurement, there are 3 distinct background categorizations that will be described in the following.
 	
 	        		\subsection{Backgrounds From Irreducible Sources} 
 	Despite all attempts to reduce the backgrounds by requiring stringent cuts on leptons, mass windows, jets, and so on, there are some processes that will just pass all of the cuts. These are known as irreducible backgrounds. For \ttZ, these backgrounds primarilly have \ttbar pairs produced in association with something else (like a boson). Table ~\ref{tab:irreducible_bkg} contains a list of irreducible backgrounds. These sources are estimated from Monte Carlo simulations in Sec~\ref{sec:irreducible_estimation}.
 	\begin{table}[hbt]
+	\caption{\label{tab:irreducible_bkg} Irreducible backgrounds.}
 	\begin{center}
 	\begin{tabular}{l|ll|c}\hline\hline % L | LL | L dividers and justification
 	Process & Decay Products & Other Special Features & Exp. Contribution\\
@@ -20,7 +21,7 @@
 	
 	\hline \hline
 	\end{tabular}
-	\caption{\label{tab:irreducible_bkg} Irreducible backgrounds.}
+	
 	\end{center}
 	\end{table}
 	
@@ -30,22 +31,24 @@
 		\subsection{Non-prompt Leptons}		
 		The \ttZ signature being measured requires 3 leptons to be reconstructed and identified. Specifically the leptons should be produced from near nominal mass W or Z boson decays. Further these bosons should have been produced either from a top decay or as part of the underlying collision. The source of the leptons cannot be directly measured but can be inferred from various properties with varying levels of false positives and negatives. A lepton produced from a W or Z boson decay is known as a ``real'' lepton. It is characterized primarily by moderate \pt, that on average is around half the mass of the parent boson. It also is detected alone with very small amounts of energy around it in the detector and originates from very near the primary vertex. Ones produced by other means are known as ``fake'' leptons. Fake leptons primarily are characterized by extra energy surrounding the lepton (indicative of being from a hadronic source like a b-quark) and often do not originate from near the primary vertex. A fake lepton may actually be an object that looks like a lepton in the detector (such as a pion that does not leave its energy as expected in the hadronic calorimeter). More confusingly, it may also be a true lepton that arises from a source that is not an interesting underlying event (such as a b-quark which decays to a far off mass W which then decays to a lepton and neutrino).\\
 		
-		The ``fake'' leptons come from sources that are not well modeled in Monte Carlo, and must be estimated by a method using data control regions. A description of the estimation method is described in Sec~\ref{sec:fake_estimation}. The primary source of fake leptons is semi-leptonic b decays. Thus events with top quarts are heavy sources of fake leptons. See Fig~\ref{fig:tt_w_fake} for an example of \ttbar contributing to the three lepton measurement. The chance of an event having two fake leptons is exponentially down from a single fake lepton due to the probability of two single b-quarks decaying semi-leptonicaly and further reduced by the probability of an event containing enough b-quarks (or light flavor quarks mis-tagged as b-jets) to both produce the fake leptons and have b-tagged jets passing the selections. Thus,  events with double fakes are considered negligible. The following sections will summarize which background processes may pass selections due to a fake lepton being present.\\
+		The ``fake'' leptons come from sources that are not well modeled in Monte Carlo, and must be estimated by a method using data control regions. A description of the estimation method is described in Sec~\ref{sec:fake_estimation}. The primary source of fake leptons is semi-leptonic b decays. Thus events with top quarts are heavy sources of fake leptons. %See Fig~\ref{fig:tt_w_fake} for an example of \ttbar contributing to the three lepton measurement. 
+The chance of an event having two fake leptons is exponentially down from a single fake lepton due to the probability of two single b-quarks decaying semi-leptonicaly and further reduced by the probability of an event containing enough b-quarks (or light flavor quarks mis-tagged as b-jets) to both produce the fake leptons and have b-tagged jets passing the selections. Thus,  events with double fakes are considered negligible. The following sections will summarize which background processes may pass selections due to a fake lepton being present.\\
 		
-			\begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.48\linewidth]{Figs/placeholder.pdf}
-\caption{\label{fig:tt_w_fake}
-Example of a \ttbar event with a fake lepton to pass the three lepton requirements.
-}
-\end{center}
-\end{figure} 
+%			\begin{figure}[h]
+%\begin{center}
+%\includegraphics[width=0.48\linewidth]{Figs/placeholder.pdf}
+%\caption{\label{fig:tt_w_fake}
+%Example of a \ttbar event with a fake lepton to pass the three lepton requirements.
+%}
+%\end{center}
+%\end{figure} 
 	
 
 
 	Table~\ref{tab:fake_bkg} lists the processes that contribute to the background events due to the inclusion of a ``fake'' lepton which does not come from a W or Z decay. These backgrounds are primarily comprised of events with \ttbar or multi-bosons in them that also have the potential to produce several jets. However, some productions with very large cross sections also contribute like the Z or W production. These events make up for the very low probability of extra jets and fake leptons through sheer commonness.
 			
 	\begin{table}[hbt]
+	\caption{\label{tab:fake_bkg} Fake backgrounds.}
 	\begin{center}
 	\begin{tabular}{l|ll|c}\hline\hline % L | LL | L dividers and justification
 	Process & Decay Products & Other Special Features & Exp. Contribution\\
@@ -58,7 +61,7 @@ Example of a \ttbar event with a fake lepton to pass the three lepton requiremen
 	W & 1L & 2 ISR/FSR Jets + 2b + 2 Fakes & Very Small\\
 	\hline \hline
 	\end{tabular}
-	\caption{\label{tab:fake_bkg} Fake backgrounds.}
+	
 	\end{center}
 	\end{table}
 
@@ -76,9 +79,9 @@ Item 1 is well modeled in Monte Carlo, but item 2 and 3 are not. Events that hav
 
 			\begin{figure}[h]
 \begin{center}
-\includegraphics[width=0.48\linewidth]{Figs/placeholder.pdf}
+\includegraphics[width=0.48\linewidth]{Figs/gluon_splitting.pdf}
 \caption{\label{fig:gluon_splitting}
-Example of a gluon splitting event where the b-quarks are from not top events.
+Diagram of a gluon splitting event where the b-quarks are from not top events.
 }
 \end{center}
 \end{figure} 
@@ -87,6 +90,7 @@ Example of a gluon splitting event where the b-quarks are from not top events.
 		Table~\ref{tab:bjet_bkg} lists the processes that contribute background events due to b-jets being measured either due to a b-quark that does not originate from a top or due to a b-jet that is a mis-tagged light flavor jet. These sources primarily are multi-boson samples that have the leptons to pass the selection but do not normally produce b-quarks.
 
 	\begin{table}[hbt]
+	\caption{\label{tab:bjet_bkg} Backgrounds which contain non-top originating b-jets.}
 	\begin{center}
 	\begin{tabular}{l|ll|c}\hline\hline % L | LL | L dividers and justification
 	Process & Decay Products & Other Special Features & Exp. Contribution\\
@@ -97,7 +101,7 @@ Example of a gluon splitting event where the b-quarks are from not top events.
 	WWZ & 3L + 2j & 2 b & Small\\
 	\hline \hline
 	\end{tabular}
-	\caption{\label{tab:bjet_bkg} Backgrounds which contain non-top originating b-jets.}
+	
 	\end{center}
 	\end{table}
 

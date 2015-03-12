@@ -1,7 +1,7 @@
 \chapter{\ttZ Cross Section Measurement}
 The components of a measurement have been shown. Selections have been determined to identify a \ttZ \ production decaying to three leptons and jets and reduce the selection of background events. Methods for predicting the contributions to the selected events from the backgrounds have been developed. Finally the contribution of systematic uncertainties from the use of Monte Carlo simulations have been assessed. The following chapter applies the already developed selections to a data sample and combines the various pieces of the measurement into a cross section for the \ttZ \ production.\\
 
-         \section{Data and Prediction Agreement in Preselection Region}
+         \section{Data and Prediction Agreement in Preselection}
 
          The background prediction methods were developed with a high reliance on MC simulation to determine the behavior of the prediction methods. In the ideal scenario an independent region would be chosen in data to demonstrate the accuracy of the predictions. However, such a scenario is not feasible with the selections used for the \ttZ measurement. The next best option is to relax the selections and show that the predictions work in a looser signal region. Here a preselection is shown to demonstrate the agreement between the full data driven predictions and data. This region is composed of the full signal selections with the jet requirements loosened to two or more jets from the signal selection of four. This is done to be able to preserve the b-tags requirement. What results is a region with almost twice the events of the signal region and slightly enhanced backgrounds, both being useful to help illustrate the agreement of the predictions and data. WZ is a dominant background and thus the reconstructed mass of the Z and the \Mt \ of the W (Fig~\ref{fig:hmass_3L2b}) are good variables for comparison. Additionally, in the preselection region, it is possible to view a more complete picture of the jet multiplicity (Fig~\ref{fig:jetmult_3L2b}) which is important as this is used in the full selection. Finally, other distributions such as the lepton \pt \ are shown in Appendix~\ref{app:figures}. In the following plots, the irreducible background is taken from pure MC where the events have been scaled by lepton efficiency data to MC scale factors and the similar b-tagging efficiency scale factors. The luminosity is scaled to that of data. For the data driven predictions, the shape is taken from MC while the normalization of the background is from the data driven predictions in Sec~\ref{sec:datadriven}.
 
@@ -61,8 +61,8 @@ Ht (Left) and pfMet (Right) after tri-lepton plus two b-tag selections.
 	The yields in data and MC are summarized in Table~\ref{tab:yields} after applying the full analysis selections as listed in Sec~\ref{sec:EventSelections}. The MC is normalized to \intLumi of luminosity to match the data, and scaled by the lepton efficiency scale factors and b-tag discriminant re-weighting as described in Sections~\ref{sec:tag_and_probe} and~\ref{sec:btag_syst} respectively. The data yields are shown along side the MC yields to help demonstrate the relative contributions of the individual backgrounds. The data driven backgrounds were shown in a previous section and will be used in the next section to calculate the \ttZ \ signal. The irreducible backgrounds will be estimated from the yields in Table~\ref{tab:yields} using the line labeled $t\overline{t}$X/tbZ/VZZ. Given our lack of knowledge of cross sections for these processes and an inability to validate these MC samples against data, we assign a 50\% systematic.
 
 \begin{sidewaystable}[ht!]
+\caption{ \label{tab:yields} Data and pure MC yields after full analysis selections with \intLumi.}
 \begin{center}
-
 \begin{tabular}{c|ccccc}\hline
 &Yields (All)&Yields ($\mu\mu\mu$)&Yields ($\mu\mu$e)&Yields (ee$\mu$)&Yields (eee)\\
 \hline \hline
@@ -82,7 +82,6 @@ Total Sig+Bkg MC (19.5 fb$^{-1}$) & 10.64$\pm$1.15 & 3.19$\pm$1.10 & 2.81$\pm$1.
 Data (19.5 fb$^{-1}$) & 12.$\pm$3.46 & 3.$\pm$1.73 & 2.$\pm$1.41 & 4.$\pm$2.00 & 3.$\pm$1.73\\
 \hline
 \end{tabular}
-\caption{ \label{tab:yields} Data and pure MC yields after full analysis selections with \intLumi.}
 \end{center}
 \end{sidewaystable}
 
@@ -93,8 +92,8 @@ Data (19.5 fb$^{-1}$) & 12.$\pm$3.46 & 3.$\pm$1.73 & 2.$\pm$1.41 & 4.$\pm$2.00 &
 Compiling the information in the preceding sections, an estimate can be made for the \ttZ \ signal in the measured data. The contribution due to di-lepton final states that pass the selection due to an additional ``fake" lepton in the event is described in Sec~\ref{sec:fake_estimation} and the contribution from tri-lepton events that pass the selection due to b-tagged jets that arise from gluon radiation is described in Sec~\ref{sec:brate_estimation}. Finally, the irreducible backgrounds which cannot be estimated by a data driven method are taken from the row labeled ``\ttX/tbZ/VZZ" in Table~\ref{tab:yields} where the ``X" is short hand for W, $\gamma$, or WW. Table~\ref{tab:signal_minus_bkg} summarizes the full yields in data after selections as well as the background estimates. Additionally a final estimate for the \ttZ \ to three lepton signal is shown.
 
 \begin{table}[ht!]
+\caption{ \label{tab:signal_minus_bkg} Data and pure MC yields after full analysis selections with \intLumi.}
 \begin{center}
-
 \begin{tabular}{c|c}\hline
  & Measurement\\
 \hline \hline
@@ -109,7 +108,6 @@ Total Background Prediction                   &  $-4.38 \pm 0.73_{bkg st} \pm 1.
 Predicted Signal                              &  $7.62 \pm 3.46_{data st} \pm 0.73_{bkg st} \pm 1.37_{bkg sy}$ \\	
 \hline
 \end{tabular}
-\caption{ \label{tab:signal_minus_bkg} Data and pure MC yields after full analysis selections with \intLumi.}
 \end{center}
 \end{table}
 
@@ -225,21 +223,20 @@ The full cross section is given by
  
  
 \begin{table}[ht!]
+\caption{ \label{tab:significance} Expected and measured significance of the signal.}
 \begin{center}
-
 \begin{tabular}{c|c}\hline
 	& Significance	 \\ \hline
 Expected	& 2.45	 \\
 Measured	& 2.33	 \\
 \hline
 \end{tabular}
-\caption{ \label{tab:significance} Expected and measured significance of the signal.}
 \end{center}
 \end{table}
  
 \begin{table}[ht!]
+\caption{ \label{tab:landsout} Measured cross section as calculated by LandS.}
 \begin{center}
-
 \begin{tabular}{c|cc}\hline
 	& r        & Cross Section	 \\ \hline
 	&  & \\
@@ -247,7 +244,6 @@ Measured	& 2.33	 \\
 & & \\
 \hline
 \end{tabular}
-\caption{ \label{tab:landsout} Measured cross section as calculated by LandS.}
 \end{center}
 \end{table}
  
@@ -260,7 +256,7 @@ Measured	& 2.33	 \\
  \clearpage
  
  
- \section{Combined Cross Section Measurement and Significance}
+ \section{Combined Cross Section and Significance}
  The measurement presented in this document relies on measuring the rate of production of the \ttZ process which decays into a try-lepton signature. Other final state signatures could be chosen and different techniques employed to measure the cross section of the \ttZ process in other final decay states. The advantage is that the various final states are statistically independent and thus can be combined for a reduced uncertainty on the measurement. Such a combination was performed using the results in this document as well as those determined in conjunction with Rutgers University and ETH Zurich. The combination is described in~\cite{ttV_combination}. In this combination, the cross section for the production of \ttbar~V is measured as well where V stands for both W and Z bosons. This makes the measurement a generate production of \ttbar in association with vector bosons.\\
  
  The \ttW was measured in several two lepton channels in order to maximize significance from the charge imbalance of the production. \ttZ to four leptons is measured in more than one channel to also maximize the contribution of more significant regions. This produces 9 channels in total.
@@ -280,8 +276,6 @@ is described in detail in Ref~\cite{higgscomb}. Table~\ref{tab:combination} summ
 \hline
 Channels used & Process &  Cross section & Significance  \\
 \hline
-
-
 2$\ell$ &  \ttW & $170 ^{+90}_{-80} \textrm{(stat.)} ^{+70}_{-70} \textrm{(syst.)}$  fb & 1.6 \\
 3$\ell$+4$\ell$ &  \ttZ & $200 ^{+80}_{-70} \textrm{(stat.)} ^{+40}_{-30} \textrm{(syst.)}$ fb & 3.1 \\
 2$\ell$+3$\ell$+4$\ell$ & \ttW $+$ \ttZ & $380 ^{+100}_{-90} \textrm{(stat.)} ^{+80}_{-70} \textrm{(syst.)}$ fb & 3.7 \\

@@ -3,16 +3,16 @@
 
 The Large Hadron Collider (LHC) is home to several experiments with several thousand collaborators working on them. Work described in this dissertation was performed using data from the Compact Muon Solenoid (CMS), one of the detectors at the LHC. Roughly 3000 collaborators work at CMS alone. The detectors at the LHC are some of the largest and most complicated land-based experimental apparatuses. As such a the following chapter is devoted to describing some of the technical aspects of the LHC and the components of the CMS detector used to measure particles. This will be followed by a description of how the particles are reconstructed and identified (Ch~\ref{ch:particle_reconstruction}). Understanding the functioning of the tools is essential to understanding the results and the methods used to reach them.\\
 
-	\section{The Large Hadron Collider and other Particle Accelerators}
+	\section{The LHC and other Particle Accelerators}
 	Modern experimental particle physics relies on two simple ideas, colliding particles together to produce other possibly more interesting or new particles and then measuring these particles directly or measuring their decay products in a large multipurpose detector. Over the years, a large number of experiments have been involved in discovering and confirming most of the particles and properties in the standard model. They have followed a general trend of using either leptons or hadrons to exploit various theoretical properties to produce certain particles more readily, or by ratcheting up the center of mass energy of the collisions from the previous similar experiment (see Figure~\ref{fig:experiment_energies}), or by increasing the rate of collisions in order to collect more data more quickly. Most new experiments rely on some combination of all of these methods to improve over the previous ones and open up new areas of exploration.\\
 	
 		\begin{figure}[h]
-\begin{center}
+		\begin{center}
 \includegraphics[width=0.8\linewidth]{Figs/collider_energy.jpg}
-\caption{\label{fig:experiment_energies}
-Plot of experimental accelerator energies and their first year of operation~\cite{comenergy}.
-}
 \end{center}
+\caption{\label{fig:experiment_energies}
+Plot of experimental accelerator energies and their first year of operation~\cite{comenergy}. Accelerators were built with a rough factor of 10 increase in energy over the last. The LHC is the first to start to fall off this increase.
+}
 \end{figure} 
 	
 	The Large Hadron Collider (LHC) is the world's current largest and most powerful particle accelerator~\cite{cernlhc}. It is situated at the European Organization for Nuclear Research (CERN) which is headquartered in Geneva, Switzerland, but crosses the border into France. The machine first started up on September 10, 2008 and has collected data periodically since then. The LHC is housed in a 27 km long ring buried underground in which two beams of protons circulate at near the speed of light in opposite directions (see Fig~\ref{fig:lhc_beampipe}). The majority of this ring is filled with superconducting electromagnets to guide the beams, equipment to super cool the magnets to $-271.3^\circ$~C and hold the beam pipes at an ultrahigh vacuum, and other odds and ends to keep the beam circulating. There are 1232 dipole magnets each 15 meters in length to bend the beams and 392 quadrupole magnets  each 5-7 meters in length to focus the beams. By focusing the beams, particles are not lost while circulating and the rate of collision of passing bunches is increased. Collisions occur at the 4 detectors (see Fig~\ref{fig:lhclayout}): CMS, ATLAS, ALICE, and LHCb.
@@ -188,10 +188,10 @@ Layout of the CMS muon system with sub-detectors in projected in r-z plane. The 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=0.9\linewidth]{Figs/int_lumi_per_day_cumulative_pp_2012.png}
+\end{center}
 \caption{\label{fig:cms_int_lumi}
 Plot of 8 \TeV data collection over time. The delivered data (blue) is slightly above the recorded data (yellow) as the detector is not able to record every collision due to various transient issues.
 }
-\end{center}
 \end{figure}
 
 The luminosity at CMS is measured using two methods. The first method is the original method and the second is somewhat newer. The first relies on the HF calorimeters which are very far forward at $\abseta \gt 3.0$, which is well beyond the range of the tracker. When triggering on zero-bias events with random triggers that are agnostic of activities inside the detector, a measurement of the average fraction of empty calorimeter readouts is then converted into a cross section and used to measure instantaneous luminosity~\cite{lumi11}. This method, however, has a problem due to the non-linear response in the HF as a function of instantaneous luminosity.\\
