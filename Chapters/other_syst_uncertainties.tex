@@ -127,7 +127,7 @@ Total                     &             & 3.3\% & Used half of\\
 
 
 
-\subsection{Uncertainties Due to Generator}	
+\subsection{Uncertainties Due to Generators}	
 
 The MC samples used in this analysis are primarily generated with the Madgraph event generator. Madgraph produces events at Leading Order. This may lead to a change in acceptance of the events compared to an NLO or NNLO event generator which comes into play with the signal acceptance. Despite the general belief that NLO samples are more accurate, Madgraph samples were still chosen here due to the inconsistent widespread availability of aMC@NLO samples as well as the fact that the available \ttZ \ and \ttW \ aMC@NLO were produced without final state photon radiation. To study this potential uncertainty, two \ttZ samples are used and are summarized in Table~\ref{tab:App:ttZGeneratorMCs}. The first is a Madgraph~\cite{Alwall:2011uj} sample which is used elsewhere in the analysis. The second is an aMC@NLO (~\cite{Frederix:2011zi, Frederix:2011ss} based on the MC@NLO formalism~\cite{Frixione:2002ik} and the MadGraph5 framework~\cite{Alwall:2011uj}) sample. \\
 
@@ -158,7 +158,7 @@ The exact selections for the numerator are:
 
 Then the difference is defined as
 \begin{equation}
-\Delta = | 1 - \frac{\epsilon _{aMC@NLO}}{\epsilon _{Madgraph}} |
+\Delta = \left| 1 - \frac{\epsilon _{aMC@NLO}}{\epsilon _{Madgraph}} \right|
 \end{equation}
 and the results are summarized in Table~\ref{tab:systgeneratorsum}
 
@@ -185,14 +185,14 @@ The recommended prescription for determining uncertainty on the energy resolutio
 \item Each reconstructed jet is matched to the closest generator jet within a cone of $\Delta R < 0.5$.
 \item If a match is found the transverse momentum of the reconstructed jet is scaled by.
 \begin{equation}
-\pt \rightarrow max[0, \pt ^{gen} + c \times (\pt - \pt ^{gen})]
+\pt \rightarrow max \left[0, \pt ^{gen} + c \times \left(\pt - \pt ^{gen} \right) \right]
 \end{equation}
 where $\pt ^{gen}$ is the transverse momentum of the matched generator jet, and c is the data/MC scale factor between the measured and expected particle flow jet resolution in Table~\ref{tab:jer_scalefactor}.
 \item If no match is found a gaussian centered at unit and with a width of $c$ is used to smear the momentum instead.
 \end{itemize}
 
 \begin{table}[h]
-\caption{ \label{tab:jer_scalefactor} data/MC scale factors used in determining the Jet Energy Resolution.}
+\caption{ \label{tab:jer_scalefactor} Data/MC scale factors used in determining the Jet Energy Resolution.}
 \begin{center}
 \begin{tabular}{c|c}\hline
 Jet Pseudorapidity & Scale Factor \\ \hline \hline
@@ -209,7 +209,7 @@ Jet Pseudorapidity & Scale Factor \\ \hline \hline
 
 To determine the systematic uncertainty on this procedure, up and down variations (Table~\ref{tab:jer_scalefactor_updown}) on the scale factor c are used. The yields in \ttZ \ signal MC are determined with the central value of c as well as the up and down values. The uncertainty is given by
 \begin{equation}
-\mathrm{uncertainty} = | \frac{Yield _{up} - Yield _{down}}{Yield _{central}} |.
+\mathrm{uncertainty} = \left| \frac{Yield _{up} - Yield _{down}}{Yield _{central}} \right|.
 \end{equation}
 
 \begin{table}[h]
