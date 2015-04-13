@@ -665,7 +665,8 @@ on microfilm and electronically: }}\\
 \def\vitapage{\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
      \else \newpage \fi\pagestyle{preliminary}
      \phantomsection
-     \addcontentsline{toc}{frontmatter}{\protect\numberline{}Vita and Publications}}
+    % \addcontentsline{toc}{frontmatter}{\protect\numberline{}Vita and Publications}}
+     \addcontentsline{toc}{frontmatter}{\protect\numberline{}Vita}} %%EDIT: 4/9/2015. Told by OGS that this should just say "Vita" because publications are part of the vita.
 % Special label for the vita list
 %
 \def\vitalabel#1{#1\hfill}
@@ -1066,7 +1067,8 @@ on microfilm and electronically: }}\\
 %   \@dotsep    : Separation between dots, in mu units.  Should be
 %                 \def'd to a number like 2 or 1.7
 
-\def\@pnumwidth{1.55em}
+%\def\@pnumwidth{1.55em}
+\def\@pnumwidth{1.80em} %%EDIT: 4/9/2015, had to make the number width wider. Worked for 3 roman numeral digits (e.g. xvi) but not for 4 digits (e.g. xviii). Will need to make this box even bigger if you need more digits. Probably never going to happen unless you wrote way way too much.
 \def\@tocrmarg {2.55em}
 \def\@dotsep{4.5}
 \setcounter{tocdepth}{2}
