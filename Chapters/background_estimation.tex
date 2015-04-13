@@ -147,7 +147,7 @@ In events, an "away" jet of \pt $\gt$ 40 \GeV is selected where "away" means tha
 		In the Fake Rate method, the FO \pt \ is restricted to $\lt 55(35) \ \GeV$ for electrons (muons). The values for the highest \pt \ range apply for all the \pt \ values in the sideband larger than this cutoff. The value is assumed to be flat, but using FOs with a maximum \pt \ to measure the Fake Rate helps to suppress electro-weak contamination. Tables~\ref{tab:ElFR} and~\ref{tab:MuFR} list the measured fake rates and statistical errors.
 		
 		\begin{sidewaystable}[h]
-		\caption{ \label{tab:ElFR} Fake Rate for electrons in data binned in \pt \ and \aeta. Errors are statistical only.}
+		\caption{ \label{tab:ElFR} Fake Rate for electrons in data binned in \pt \ and \aeta. Errors are statistical only. Granularity of bins is chosen based on available statistics.}
 \begin{center}
 \begin{tabular}{c|ccccc} \hline \hline
 %\backslashbox{\aeta}{\pt}
@@ -162,7 +162,7 @@ In events, an "away" jet of \pt $\gt$ 40 \GeV is selected where "away" means tha
 \end{sidewaystable}
 
 \begin{sidewaystable}[h]
-\caption{ \label{tab:MuFR} Fake Rate for muons in data binned in \pt \ and \aeta. Errors are statistical only.}
+\caption{ \label{tab:MuFR} Fake Rate for muons in data binned in \pt \ and \aeta. Errors are statistical only. Granularity of bins is chosen based on available statistics.}
 \begin{center}
 \begin{tabular}{c|ccccc} \hline \hline
 % \backslashbox{\aeta}{\pt}
@@ -213,7 +213,7 @@ DY $\rightarrow 2 \ell$  &   0.00$\pm$0.60 \\
 The second closure test is designed to demonstrate the accuracy of the method in a messy environment where real leptons are allowed to fail the isolation cut and contaminate the prediction. The same procedure is applied where a QCD MC derived fake rate is used to predict the contribution from the MC sideband which does not contain generator matching for any of the leptons or FOs. Table~\ref{tab:fraggregateclosure} summarizes the closure value below.\\
 
 \begin{table}[h]
-\caption{ \label{tab:fraggregateclosure} Closure of fake lepton prediction from QCD FR and \ttbar \ sideband.}
+\caption{ \label{tab:fraggregateclosure} Closure of fake lepton prediction from QCD derived FR and \ttbar \ sideband (not requiring generator matching).}
 \begin{center}
 \begin{tabular}{c|c|c|c|c|c} \hline \hline
  &                Prediction &Measured & Pre./Meas. \\ \hline
@@ -231,7 +231,7 @@ It is clear that the closure test is not statistically sound as the closure is t
 %\item The prediction is rescaled based on the closer test results. Systematics are kept the same since the accuracy of the method has not changed, but this should supply a more accurate central value for the prediction.
 
 \begin{sidewaystable}[ht!]
-\caption{ \label{tab:spillage} Spillage prediction for correcting the Fake Rate prediction. Errors are statistical only.}
+\caption{ \label{tab:spillage} Spillage prediction for correcting the Fake Rate prediction. Errors are statistical only. Spillage samples include those that have the correct number of real leptons, but, for whatever reason, one of the leptons fails to pass the isolation requirement.}
 \begin{center}
 \begin{tabular}{c|ccccc}\hline
                                                    &Yields (All)     &Yields ($\mu\mu\mu$)  &Yields ($\mu\mu$e)  &Yields (ee$\mu$)   &Yields (eee)\\
@@ -250,7 +250,7 @@ Contribution From Spillage                         & 0.52$\pm$0.04 & 0.18$\pm$0.
 The Fake Rate prediction is summarized in Table~\ref{tab:FRPrediction}. It would be reasonable to scale this number by the value obtained in the closure test to create a more accurate prediction. The closure value, however, does not have enough statistical precision to do so here with confidence. It is within 1 $\sigma$ of 1.0 in the closure test in Table~\ref{tab:fraggregateclosure} and very nearly within 1 $\sigma$ in the closure test in Table~\ref{tab:frgenclosure}. Given this compatibility with 1.0, a correction based on the closure is not applied.\\
 
 \begin{sidewaystable}[ht!]
-\caption{ \label{tab:FRPrediction} Fake Rate prediction corrected for spillage. Errors are statistical only.}
+\caption{ \label{tab:FRPrediction} Fake Rate prediction corrected for spillage. Fake rate and control regions are measured in data. Errors are statistical only.}
 \begin{center}
 \begin{tabular}{c|ccccc}\hline
                                               &Yields (All)      &Yields ($\mu\mu\mu$)  &Yields ($\mu\mu$e)  &Yields (ee$\mu$)  &Yields (eee)\\

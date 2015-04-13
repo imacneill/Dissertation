@@ -34,7 +34,7 @@ where $A_0$ is from the central value PDF.\\
 The NNPDF samples of PDF+$\alpha _s$ is obtained by using NNPDF sets with different fixed $\alpha _s$ corresponding to a Gaussian sample around the nominal $\alpha _s = 0.119$ as shown in Table~\ref{tab:nnPDFsets}.
  
 \begin{table}[h]
-\caption{\label{tab:nnPDFsets} Number of NNPDF replicas for each $\alpha _s$.}
+\caption{\label{tab:nnPDFsets} NNPDF $\alpha _s$ ranges for determining the impact of $\alpha _s$ ranges. Number of replicas for each $\alpha _s$ are listed.}
 \begin{center}
 \begin{tabular}{c|ccccccc}\hline
 $\alpha _s$         &  0.116 & 0.117 & 0.118 & 0.119 & 0.120 & 0.121 & 0.122 \\ \hline
@@ -65,7 +65,7 @@ To combine the measurements into one error, the uncertainty is computed with the
 \end{equation}
 and the PDF uncertainty is
 \begin{equation}
-Unc_{PDF} = \frac{1}{2}(\Delta _{max} - \Delta _{min} ),
+\mathrm{Unc}_{PDF} = \frac{1}{2}(\Delta _{max} - \Delta _{min} ),
 \end{equation}
 where i runs over all of the PDF sets listed above.\\
 
@@ -192,7 +192,7 @@ where $\pt ^{gen}$ is the transverse momentum of the matched generator jet, and 
 \end{itemize}
 
 \begin{table}[h]
-\caption{ \label{tab:jer_scalefactor} Data/MC scale factors used in determining the Jet Energy Resolution.}
+\caption{ \label{tab:jer_scalefactor} Data/MC scale factors used in determining the Jet Energy Resolution. Scale factors are binned in $\eta$ as the detector response varies with $\eta$.}
 \begin{center}
 \begin{tabular}{c|c}\hline
 Jet Pseudorapidity & Scale Factor \\ \hline \hline
