@@ -603,8 +603,8 @@ on microfilm and electronically: }}\\
 {\phantomsection % RMR - hyperref requires a \section in order to place a hyperlink
 \addcontentsline{toc}{frontmatter}{\protect\numberline{}Dedication}%
 \begin{alwayssingle}
-  %\centerline{\expandafter\uppercase\expandafter{Dedication}}%
-  \centerline{\expandafter\uppercase\expandafter{ }}%
+  \centerline{\expandafter\uppercase\expandafter{Dedication}}%
+  %\centerline{\expandafter\uppercase\expandafter{ }}%
   \large\begin{center}
   }
 {\end{center}\end{alwayssingle}}
@@ -614,7 +614,7 @@ on microfilm and electronically: }}\\
 \newenvironment{mydedication}
 {\phantomsection
 \addcontentsline{toc}{frontmatter}{\protect\numberline{}Dedication}%
-  \centerline{\expandafter\uppercase\expandafter{}}}
+  \centerline{\expandafter\uppercase\expandafter{Dedication}}}
 {}
 
 
@@ -628,8 +628,8 @@ on microfilm and electronically: }}\\
 {\phantomsection 
 \addcontentsline{toc}{frontmatter}{\protect\numberline{}Epigraph}%
 \begin{alwayssingle}
-  %\centerline{\expandafter\uppercase\expandafter{Epigraph}}%
-  \centerline{\expandafter\uppercase\expandafter{ }}%
+  \centerline{\expandafter\uppercase\expandafter{Epigraph}}%
+  %\centerline{\expandafter\uppercase\expandafter{ }}%
   \vspace{2in}\hfill\begin{flushright}}
 % \parbox[t]{3in}
 {\end{flushright}\end{alwayssingle}}
@@ -639,7 +639,7 @@ on microfilm and electronically: }}\\
 \newenvironment{myepigraph}
 {\phantomsection 
 \addcontentsline{toc}{frontmatter}{\protect\numberline{}Epigraph}%
-  \centerline{\expandafter\uppercase\expandafter{ }}}%
+  \centerline{\expandafter\uppercase\expandafter{Epigraph}}}%
 {}
 
 
